@@ -4,7 +4,19 @@ Swift Package Manager distribution for Lifestream SDK.
 
 ## Installation
 
-For iOS installation instructions, see the main [README.md](../README.md#ios) in the project root.
+### Swift Package Manager
+
+**Xcode:**
+1. File → Add Package Dependencies
+2. URL: `https://github.com/IDN-Media/lifestream-XCFramework`
+3. Select version and add to target
+
+**Package.swift:**
+```swift
+dependencies: [
+    .package(url: "https://github.com/IDN-Media/lifestream-XCFramework", from: "1.0.0")
+]
+```
 
 ## Usage
 
