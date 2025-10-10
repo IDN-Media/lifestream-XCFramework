@@ -1,0 +1,8 @@
+framework module "LifestreamSDK" {
+    umbrella header "LifestreamSDK.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
