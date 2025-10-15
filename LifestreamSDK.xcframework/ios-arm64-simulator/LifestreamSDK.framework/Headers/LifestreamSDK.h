@@ -215,7 +215,7 @@ __attribute__((swift_name("Lifestream")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)lifestream __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKLifestream *shared __attribute__((swift_name("shared")));
-- (void)configureAppId:(NSString *)appId secretKey:(NSString *)secretKey organization:(NSString *)organization __attribute__((swift_name("configure(appId:secretKey:organization:)")));
+- (void)configureAppId:(NSString *)appId secretKey:(NSString *)secretKey organization:(NSString *)organization isDebug:(BOOL)isDebug __attribute__((swift_name("configure(appId:secretKey:organization:isDebug:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -246,6 +246,7 @@ __attribute__((swift_name("Lifestream")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)resolveDeeplinkUrl:(NSString *)url onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(LSDKKotlinThrowable *))onError completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("resolveDeeplink(url:onSuccess:onError:completionHandler:)")));
+@property BOOL isDebug __attribute__((swift_name("isDebug")));
 @property (readonly) NSString * _Nullable organizationId __attribute__((swift_name("organizationId")));
 @end
 
