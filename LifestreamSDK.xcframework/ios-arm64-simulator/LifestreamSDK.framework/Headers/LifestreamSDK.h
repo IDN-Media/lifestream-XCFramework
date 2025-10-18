@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class LSDKApiError, LSDKApiErrorCompanion, LSDKApiResponseDto<T>, LSDKApiResponseDtoCompanion, LSDKApiService, LSDKCreateLinkRequestDto, LSDKCreateLinkRequestDtoCompanion, LSDKEncryptionUtil, LSDKHealth, LSDKHealthCompanion, LSDKHealthStatus, LSDKHttpClientFactory, LSDKKermitLogger, LSDKKermitLoggerCompanion, LSDKKermit_coreBaseLogger, LSDKKermit_coreLogWriter, LSDKKermit_coreSeverity, LSDKKotlinAbstractCoroutineContextElement, LSDKKotlinAbstractCoroutineContextKey<B, E>, LSDKKotlinArray<T>, LSDKKotlinByteArray, LSDKKotlinByteIterator, LSDKKotlinCancellationException, LSDKKotlinEnum<E>, LSDKKotlinEnumCompanion, LSDKKotlinException, LSDKKotlinIllegalArgumentException, LSDKKotlinIllegalStateException, LSDKKotlinKTypeProjection, LSDKKotlinKTypeProjectionCompanion, LSDKKotlinKVariance, LSDKKotlinNothing, LSDKKotlinRuntimeException, LSDKKotlinThrowable, LSDKKotlinUnit, LSDKKotlinx_coroutines_coreCoroutineDispatcher, LSDKKotlinx_coroutines_coreCoroutineDispatcherKey, LSDKKotlinx_io_coreBuffer, LSDKKotlinx_serialization_coreSerialKind, LSDKKotlinx_serialization_coreSerializersModule, LSDKKotlinx_serialization_jsonJsonElement, LSDKKotlinx_serialization_jsonJsonElementCompanion, LSDKKtor_client_coreHttpClient, LSDKKtor_client_coreHttpClientCall, LSDKKtor_client_coreHttpClientCallCompanion, LSDKKtor_client_coreHttpClientConfig<T>, LSDKKtor_client_coreHttpClientEngineConfig, LSDKKtor_client_coreHttpReceivePipeline, LSDKKtor_client_coreHttpReceivePipelinePhases, LSDKKtor_client_coreHttpRequestBuilder, LSDKKtor_client_coreHttpRequestBuilderCompanion, LSDKKtor_client_coreHttpRequestData, LSDKKtor_client_coreHttpRequestPipeline, LSDKKtor_client_coreHttpRequestPipelinePhases, LSDKKtor_client_coreHttpResponse, LSDKKtor_client_coreHttpResponseContainer, LSDKKtor_client_coreHttpResponseData, LSDKKtor_client_coreHttpResponsePipeline, LSDKKtor_client_coreHttpResponsePipelinePhases, LSDKKtor_client_coreHttpSendPipeline, LSDKKtor_client_coreHttpSendPipelinePhases, LSDKKtor_client_coreProxyConfig, LSDKKtor_eventsEventDefinition<T>, LSDKKtor_eventsEvents, LSDKKtor_httpContentType, LSDKKtor_httpContentTypeCompanion, LSDKKtor_httpHeaderValueParam, LSDKKtor_httpHeaderValueWithParameters, LSDKKtor_httpHeaderValueWithParametersCompanion, LSDKKtor_httpHeadersBuilder, LSDKKtor_httpHttpMethod, LSDKKtor_httpHttpMethodCompanion, LSDKKtor_httpHttpProtocolVersion, LSDKKtor_httpHttpProtocolVersionCompanion, LSDKKtor_httpHttpStatusCode, LSDKKtor_httpHttpStatusCodeCompanion, LSDKKtor_httpOutgoingContent, LSDKKtor_httpURLBuilder, LSDKKtor_httpURLBuilderCompanion, LSDKKtor_httpURLProtocol, LSDKKtor_httpURLProtocolCompanion, LSDKKtor_httpUrl, LSDKKtor_httpUrlCompanion, LSDKKtor_utilsAttributeKey<T>, LSDKKtor_utilsGMTDate, LSDKKtor_utilsGMTDateCompanion, LSDKKtor_utilsMonth, LSDKKtor_utilsMonthCompanion, LSDKKtor_utilsPipeline<TSubject, TContext>, LSDKKtor_utilsPipelinePhase, LSDKKtor_utilsStringValuesBuilderImpl, LSDKKtor_utilsTypeInfo, LSDKKtor_utilsWeekDay, LSDKKtor_utilsWeekDayCompanion, LSDKLifestream, LSDKLifestreamConfig, LSDKLifestreamConfigCompanion, LSDKLink, LSDKLinkCompanion, LSDKLinkRequestBuilder, LSDKLink_, LSDKLoggerFactory, LSDKOrganization, LSDKOrganizationCompanion, LSDKOrganization_, LSDKUserMessage, LSDKUserMessageCompanion;
+@class LSDKApiError, LSDKApiErrorCompanion, LSDKApiResponseDto<T>, LSDKApiResponseDtoCompanion, LSDKCreateLinkRequestDto, LSDKCreateLinkRequestDtoCompanion, LSDKEncryptionUtil, LSDKHttpClientFactory, LSDKKermitLogger, LSDKKermitLoggerCompanion, LSDKKermit_coreBaseLogger, LSDKKermit_coreLogWriter, LSDKKermit_coreSeverity, LSDKKotlinAbstractCoroutineContextElement, LSDKKotlinAbstractCoroutineContextKey<B, E>, LSDKKotlinArray<T>, LSDKKotlinByteArray, LSDKKotlinByteIterator, LSDKKotlinCancellationException, LSDKKotlinEnum<E>, LSDKKotlinEnumCompanion, LSDKKotlinException, LSDKKotlinIllegalArgumentException, LSDKKotlinIllegalStateException, LSDKKotlinKTypeProjection, LSDKKotlinKTypeProjectionCompanion, LSDKKotlinKVariance, LSDKKotlinNothing, LSDKKotlinRuntimeException, LSDKKotlinThrowable, LSDKKotlinUnit, LSDKKotlinx_coroutines_coreCoroutineDispatcher, LSDKKotlinx_coroutines_coreCoroutineDispatcherKey, LSDKKotlinx_io_coreBuffer, LSDKKotlinx_serialization_coreSerialKind, LSDKKotlinx_serialization_coreSerializersModule, LSDKKotlinx_serialization_jsonJsonElement, LSDKKotlinx_serialization_jsonJsonElementCompanion, LSDKKtor_client_coreHttpClient, LSDKKtor_client_coreHttpClientCall, LSDKKtor_client_coreHttpClientCallCompanion, LSDKKtor_client_coreHttpClientConfig<T>, LSDKKtor_client_coreHttpClientEngineConfig, LSDKKtor_client_coreHttpReceivePipeline, LSDKKtor_client_coreHttpReceivePipelinePhases, LSDKKtor_client_coreHttpRequestBuilder, LSDKKtor_client_coreHttpRequestBuilderCompanion, LSDKKtor_client_coreHttpRequestData, LSDKKtor_client_coreHttpRequestPipeline, LSDKKtor_client_coreHttpRequestPipelinePhases, LSDKKtor_client_coreHttpResponse, LSDKKtor_client_coreHttpResponseContainer, LSDKKtor_client_coreHttpResponseData, LSDKKtor_client_coreHttpResponsePipeline, LSDKKtor_client_coreHttpResponsePipelinePhases, LSDKKtor_client_coreHttpSendPipeline, LSDKKtor_client_coreHttpSendPipelinePhases, LSDKKtor_client_coreProxyConfig, LSDKKtor_eventsEventDefinition<T>, LSDKKtor_eventsEvents, LSDKKtor_httpContentType, LSDKKtor_httpContentTypeCompanion, LSDKKtor_httpHeaderValueParam, LSDKKtor_httpHeaderValueWithParameters, LSDKKtor_httpHeaderValueWithParametersCompanion, LSDKKtor_httpHeadersBuilder, LSDKKtor_httpHttpMethod, LSDKKtor_httpHttpMethodCompanion, LSDKKtor_httpHttpProtocolVersion, LSDKKtor_httpHttpProtocolVersionCompanion, LSDKKtor_httpHttpStatusCode, LSDKKtor_httpHttpStatusCodeCompanion, LSDKKtor_httpOutgoingContent, LSDKKtor_httpURLBuilder, LSDKKtor_httpURLBuilderCompanion, LSDKKtor_httpURLProtocol, LSDKKtor_httpURLProtocolCompanion, LSDKKtor_httpUrl, LSDKKtor_httpUrlCompanion, LSDKKtor_utilsAttributeKey<T>, LSDKKtor_utilsGMTDate, LSDKKtor_utilsGMTDateCompanion, LSDKKtor_utilsMonth, LSDKKtor_utilsMonthCompanion, LSDKKtor_utilsPipeline<TSubject, TContext>, LSDKKtor_utilsPipelinePhase, LSDKKtor_utilsStringValuesBuilderImpl, LSDKKtor_utilsTypeInfo, LSDKKtor_utilsWeekDay, LSDKKtor_utilsWeekDayCompanion, LSDKLifestream, LSDKLifestreamConfig, LSDKLifestreamConfigCompanion, LSDKLink, LSDKLinkCompanion, LSDKLinkRequestBuilder, LSDKLink_, LSDKLoggerFactory, LSDKOrganization, LSDKOrganizationCompanion, LSDKOrganization_, LSDKUserMessage, LSDKUserMessageCompanion;
 
-@protocol LSDKHealthRepository, LSDKKermit_coreLoggerConfig, LSDKKermit_coreMutableLoggerConfig, LSDKKotlinAnnotation, LSDKKotlinAutoCloseable, LSDKKotlinComparable, LSDKKotlinContinuation, LSDKKotlinContinuationInterceptor, LSDKKotlinCoroutineContext, LSDKKotlinCoroutineContextElement, LSDKKotlinCoroutineContextKey, LSDKKotlinFunction, LSDKKotlinIterator, LSDKKotlinKAnnotatedElement, LSDKKotlinKClass, LSDKKotlinKClassifier, LSDKKotlinKDeclarationContainer, LSDKKotlinKType, LSDKKotlinMapEntry, LSDKKotlinSequence, LSDKKotlinSuspendFunction2, LSDKKotlinx_coroutines_coreChildHandle, LSDKKotlinx_coroutines_coreChildJob, LSDKKotlinx_coroutines_coreCoroutineScope, LSDKKotlinx_coroutines_coreDisposableHandle, LSDKKotlinx_coroutines_coreFlow, LSDKKotlinx_coroutines_coreFlowCollector, LSDKKotlinx_coroutines_coreJob, LSDKKotlinx_coroutines_coreParentJob, LSDKKotlinx_coroutines_coreRunnable, LSDKKotlinx_coroutines_coreSelectClause, LSDKKotlinx_coroutines_coreSelectClause0, LSDKKotlinx_coroutines_coreSelectInstance, LSDKKotlinx_io_coreRawSink, LSDKKotlinx_io_coreRawSource, LSDKKotlinx_io_coreSink, LSDKKotlinx_io_coreSource, LSDKKotlinx_serialization_coreCompositeDecoder, LSDKKotlinx_serialization_coreCompositeEncoder, LSDKKotlinx_serialization_coreDecoder, LSDKKotlinx_serialization_coreDeserializationStrategy, LSDKKotlinx_serialization_coreEncoder, LSDKKotlinx_serialization_coreKSerializer, LSDKKotlinx_serialization_coreSerialDescriptor, LSDKKotlinx_serialization_coreSerializationStrategy, LSDKKotlinx_serialization_coreSerializersModuleCollector, LSDKKtor_client_coreHttpClientEngine, LSDKKtor_client_coreHttpClientEngineCapability, LSDKKtor_client_coreHttpClientPlugin, LSDKKtor_client_coreHttpRequest, LSDKKtor_httpHeaders, LSDKKtor_httpHttpMessage, LSDKKtor_httpHttpMessageBuilder, LSDKKtor_httpParameters, LSDKKtor_httpParametersBuilder, LSDKKtor_ioByteReadChannel, LSDKKtor_ioCloseable, LSDKKtor_ioJvmSerializable, LSDKKtor_utilsAttributes, LSDKKtor_utilsStringValues, LSDKKtor_utilsStringValuesBuilder, LSDKLifestreamError, LSDKMultiplatform_settings_coroutinesFlowSettings, LSDKMultiplatform_settings_coroutinesSuspendSettings, LSDKSecureStorage;
+@protocol LSDKKermit_coreLoggerConfig, LSDKKermit_coreMutableLoggerConfig, LSDKKotlinAnnotation, LSDKKotlinAutoCloseable, LSDKKotlinComparable, LSDKKotlinContinuation, LSDKKotlinContinuationInterceptor, LSDKKotlinCoroutineContext, LSDKKotlinCoroutineContextElement, LSDKKotlinCoroutineContextKey, LSDKKotlinFunction, LSDKKotlinIterator, LSDKKotlinKAnnotatedElement, LSDKKotlinKClass, LSDKKotlinKClassifier, LSDKKotlinKDeclarationContainer, LSDKKotlinKType, LSDKKotlinMapEntry, LSDKKotlinSequence, LSDKKotlinSuspendFunction2, LSDKKotlinx_coroutines_coreChildHandle, LSDKKotlinx_coroutines_coreChildJob, LSDKKotlinx_coroutines_coreCoroutineScope, LSDKKotlinx_coroutines_coreDisposableHandle, LSDKKotlinx_coroutines_coreFlow, LSDKKotlinx_coroutines_coreFlowCollector, LSDKKotlinx_coroutines_coreJob, LSDKKotlinx_coroutines_coreParentJob, LSDKKotlinx_coroutines_coreRunnable, LSDKKotlinx_coroutines_coreSelectClause, LSDKKotlinx_coroutines_coreSelectClause0, LSDKKotlinx_coroutines_coreSelectInstance, LSDKKotlinx_io_coreRawSink, LSDKKotlinx_io_coreRawSource, LSDKKotlinx_io_coreSink, LSDKKotlinx_io_coreSource, LSDKKotlinx_serialization_coreCompositeDecoder, LSDKKotlinx_serialization_coreCompositeEncoder, LSDKKotlinx_serialization_coreDecoder, LSDKKotlinx_serialization_coreDeserializationStrategy, LSDKKotlinx_serialization_coreEncoder, LSDKKotlinx_serialization_coreKSerializer, LSDKKotlinx_serialization_coreSerialDescriptor, LSDKKotlinx_serialization_coreSerializationStrategy, LSDKKotlinx_serialization_coreSerializersModuleCollector, LSDKKtor_client_coreHttpClientEngine, LSDKKtor_client_coreHttpClientEngineCapability, LSDKKtor_client_coreHttpClientPlugin, LSDKKtor_client_coreHttpRequest, LSDKKtor_httpHeaders, LSDKKtor_httpHttpMessage, LSDKKtor_httpHttpMessageBuilder, LSDKKtor_httpParameters, LSDKKtor_httpParametersBuilder, LSDKKtor_ioByteReadChannel, LSDKKtor_ioCloseable, LSDKKtor_ioJvmSerializable, LSDKKtor_utilsAttributes, LSDKKtor_utilsStringValues, LSDKKtor_utilsStringValuesBuilder, LSDKLifestreamError, LSDKMultiplatform_settings_coroutinesFlowSettings, LSDKMultiplatform_settings_coroutinesSuspendSettings, LSDKSecureStorage;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -233,12 +233,6 @@ __attribute__((swift_name("Lifestream")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)resetWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("reset(completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
 - (void)resolveDeeplinkUrl:(NSString *)url completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("resolveDeeplink(url:completionHandler:)")));
 
 /**
@@ -246,8 +240,18 @@ __attribute__((swift_name("Lifestream")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)resolveDeeplinkUrl:(NSString *)url onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(LSDKKotlinThrowable *))onError completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("resolveDeeplink(url:onSuccess:onError:completionHandler:)")));
-@property BOOL isDebug __attribute__((swift_name("isDebug")));
+@property (readonly) BOOL isDebug __attribute__((swift_name("isDebug")));
 @property (readonly) NSString * _Nullable organizationId __attribute__((swift_name("organizationId")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("MissingSlugError")))
+@interface LSDKMissingSlugError : LSDKKotlinIllegalArgumentException <LSDKLifestreamError>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithCause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @end
 
 __attribute__((swift_name("KotlinIllegalStateException")))
@@ -279,12 +283,6 @@ __attribute__((swift_name("ApiService")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)createLinkRequest:(LSDKCreateLinkRequestDto *)request completionHandler:(void (^)(LSDKApiResponseDto<LSDKLink *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(request:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getHealthStatusWithCompletionHandler:(void (^)(LSDKHealth * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getHealthStatus(completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -389,35 +387,6 @@ __attribute__((swift_name("UserMessage.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKUserMessageCompanion *shared __attribute__((swift_name("shared")));
-- (id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Health")))
-@interface LSDKHealth : LSDKBase
-- (instancetype)initWithStatus:(NSString *)status version:(NSString *)version __attribute__((swift_name("init(status:version:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) LSDKHealthCompanion *companion __attribute__((swift_name("companion")));
-- (LSDKHealth *)doCopyStatus:(NSString *)status version:(NSString *)version __attribute__((swift_name("doCopy(status:version:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (LSDKHealthStatus *)toDomain __attribute__((swift_name("toDomain()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *status __attribute__((swift_name("status")));
-@property (readonly) NSString *version __attribute__((swift_name("version")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Health.Companion")))
-@interface LSDKHealthCompanion : LSDKBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) LSDKHealthCompanion *shared __attribute__((swift_name("shared")));
 - (id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -713,29 +682,6 @@ __attribute__((swift_name("Organization.Companion")))
 - (id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
-__attribute__((swift_name("HealthRepository")))
-@protocol LSDKHealthRepository
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getHealthStatusWithCompletionHandler:(void (^)(LSDKHealthStatus * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getHealthStatus(completionHandler:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("HealthRepositoryImpl")))
-@interface LSDKHealthRepositoryImpl : LSDKBase <LSDKHealthRepository>
-- (instancetype)initWithApiService:(LSDKApiService *)apiService __attribute__((swift_name("init(apiService:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getHealthStatusWithCompletionHandler:(void (^)(LSDKHealthStatus * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getHealthStatus(completionHandler:)")));
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("HttpClientFactory")))
 @interface LSDKHttpClientFactory : LSDKBase
@@ -754,18 +700,6 @@ __attribute__((swift_name("LoggerFactory")))
 + (instancetype)loggerFactory __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKLoggerFactory *shared __attribute__((swift_name("shared")));
 - (LSDKKermitLogger *)createTag:(NSString *)tag __attribute__((swift_name("create(tag:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("HealthStatus")))
-@interface LSDKHealthStatus : LSDKBase
-- (instancetype)initWithStatus:(NSString *)status version:(NSString *)version __attribute__((swift_name("init(status:version:)"))) __attribute__((objc_designated_initializer));
-- (LSDKHealthStatus *)doCopyStatus:(NSString *)status version:(NSString *)version __attribute__((swift_name("doCopy(status:version:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *status __attribute__((swift_name("status")));
-@property (readonly) NSString *version __attribute__((swift_name("version")));
 @end
 
 
@@ -865,18 +799,6 @@ __attribute__((swift_name("Organization_")))
 @property (readonly) NSString * _Nullable iosStoreUrl __attribute__((swift_name("iosStoreUrl")));
 @property (readonly) BOOL isActive __attribute__((swift_name("isActive")));
 @property (readonly) NSString *slug __attribute__((swift_name("slug")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("GetHealthStatusUseCase")))
-@interface LSDKGetHealthStatusUseCase : LSDKBase
-- (instancetype)initWithRepository:(id<LSDKHealthRepository>)repository __attribute__((swift_name("init(repository:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)invokeWithCompletionHandler:(void (^)(LSDKHealthStatus * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(completionHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
