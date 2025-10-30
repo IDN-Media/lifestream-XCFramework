@@ -35,6 +35,7 @@ Lifestream.shared.configure(
 ```swift
 Task {
     try await Lifestream.shared.createLink(
+        prefix: "custom", // Optional: custom domain prefix (e.g., "custom.idn.link")
         onSuccess: { shortUrl in print("Created: \(shortUrl)") },
         onError: { error in print("Error: \(error)") }
     ) { builder in
