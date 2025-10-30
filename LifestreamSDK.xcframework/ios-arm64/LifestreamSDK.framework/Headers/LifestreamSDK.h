@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class LSDKApiError, LSDKApiErrorCompanion, LSDKApiResponseDto<T>, LSDKApiResponseDtoCompanion, LSDKCreateLinkRequestDto, LSDKCreateLinkRequestDtoCompanion, LSDKEncryptionUtil, LSDKHttpClientFactory, LSDKKermitLogger, LSDKKermitLoggerCompanion, LSDKKermit_coreBaseLogger, LSDKKermit_coreLogWriter, LSDKKermit_coreSeverity, LSDKKotlinAbstractCoroutineContextElement, LSDKKotlinAbstractCoroutineContextKey<B, E>, LSDKKotlinArray<T>, LSDKKotlinByteArray, LSDKKotlinByteIterator, LSDKKotlinCancellationException, LSDKKotlinEnum<E>, LSDKKotlinEnumCompanion, LSDKKotlinException, LSDKKotlinIllegalArgumentException, LSDKKotlinIllegalStateException, LSDKKotlinKTypeProjection, LSDKKotlinKTypeProjectionCompanion, LSDKKotlinKVariance, LSDKKotlinNothing, LSDKKotlinRuntimeException, LSDKKotlinThrowable, LSDKKotlinUnit, LSDKKotlinx_coroutines_coreCoroutineDispatcher, LSDKKotlinx_coroutines_coreCoroutineDispatcherKey, LSDKKotlinx_io_coreBuffer, LSDKKotlinx_serialization_coreSerialKind, LSDKKotlinx_serialization_coreSerializersModule, LSDKKotlinx_serialization_jsonJsonElement, LSDKKotlinx_serialization_jsonJsonElementCompanion, LSDKKtor_client_coreHttpClient, LSDKKtor_client_coreHttpClientCall, LSDKKtor_client_coreHttpClientCallCompanion, LSDKKtor_client_coreHttpClientConfig<T>, LSDKKtor_client_coreHttpClientEngineConfig, LSDKKtor_client_coreHttpReceivePipeline, LSDKKtor_client_coreHttpReceivePipelinePhases, LSDKKtor_client_coreHttpRequestBuilder, LSDKKtor_client_coreHttpRequestBuilderCompanion, LSDKKtor_client_coreHttpRequestData, LSDKKtor_client_coreHttpRequestPipeline, LSDKKtor_client_coreHttpRequestPipelinePhases, LSDKKtor_client_coreHttpResponse, LSDKKtor_client_coreHttpResponseContainer, LSDKKtor_client_coreHttpResponseData, LSDKKtor_client_coreHttpResponsePipeline, LSDKKtor_client_coreHttpResponsePipelinePhases, LSDKKtor_client_coreHttpSendPipeline, LSDKKtor_client_coreHttpSendPipelinePhases, LSDKKtor_client_coreProxyConfig, LSDKKtor_eventsEventDefinition<T>, LSDKKtor_eventsEvents, LSDKKtor_httpContentType, LSDKKtor_httpContentTypeCompanion, LSDKKtor_httpHeaderValueParam, LSDKKtor_httpHeaderValueWithParameters, LSDKKtor_httpHeaderValueWithParametersCompanion, LSDKKtor_httpHeadersBuilder, LSDKKtor_httpHttpMethod, LSDKKtor_httpHttpMethodCompanion, LSDKKtor_httpHttpProtocolVersion, LSDKKtor_httpHttpProtocolVersionCompanion, LSDKKtor_httpHttpStatusCode, LSDKKtor_httpHttpStatusCodeCompanion, LSDKKtor_httpOutgoingContent, LSDKKtor_httpURLBuilder, LSDKKtor_httpURLBuilderCompanion, LSDKKtor_httpURLProtocol, LSDKKtor_httpURLProtocolCompanion, LSDKKtor_httpUrl, LSDKKtor_httpUrlCompanion, LSDKKtor_utilsAttributeKey<T>, LSDKKtor_utilsGMTDate, LSDKKtor_utilsGMTDateCompanion, LSDKKtor_utilsMonth, LSDKKtor_utilsMonthCompanion, LSDKKtor_utilsPipeline<TSubject, TContext>, LSDKKtor_utilsPipelinePhase, LSDKKtor_utilsStringValuesBuilderImpl, LSDKKtor_utilsTypeInfo, LSDKKtor_utilsWeekDay, LSDKKtor_utilsWeekDayCompanion, LSDKLifestream, LSDKLifestreamConfig, LSDKLifestreamConfigCompanion, LSDKLink, LSDKLinkCompanion, LSDKLinkRequestBuilder, LSDKLink_, LSDKLoggerFactory, LSDKOrganization, LSDKOrganizationCompanion, LSDKOrganization_, LSDKUserMessage, LSDKUserMessageCompanion;
+@class LSDKApiError, LSDKApiErrorCompanion, LSDKApiResponseDto<T>, LSDKApiResponseDtoCompanion, LSDKCreateLinkRequestDto, LSDKCreateLinkRequestDtoCompanion, LSDKEncryptionUtil, LSDKHttpClientFactory, LSDKKermitLogger, LSDKKermitLoggerCompanion, LSDKKermit_coreBaseLogger, LSDKKermit_coreLogWriter, LSDKKermit_coreSeverity, LSDKKotlinAbstractCoroutineContextElement, LSDKKotlinAbstractCoroutineContextKey<B, E>, LSDKKotlinArray<T>, LSDKKotlinByteArray, LSDKKotlinByteIterator, LSDKKotlinCancellationException, LSDKKotlinCharArray, LSDKKotlinCharIterator, LSDKKotlinEnum<E>, LSDKKotlinEnumCompanion, LSDKKotlinException, LSDKKotlinIllegalArgumentException, LSDKKotlinIllegalStateException, LSDKKotlinKTypeProjection, LSDKKotlinKTypeProjectionCompanion, LSDKKotlinKVariance, LSDKKotlinNothing, LSDKKotlinRuntimeException, LSDKKotlinThrowable, LSDKKotlinUnit, LSDKKotlinx_coroutines_coreCoroutineDispatcher, LSDKKotlinx_coroutines_coreCoroutineDispatcherKey, LSDKKotlinx_io_coreBuffer, LSDKKotlinx_serialization_coreSerialKind, LSDKKotlinx_serialization_coreSerializersModule, LSDKKotlinx_serialization_jsonJsonElement, LSDKKotlinx_serialization_jsonJsonElementCompanion, LSDKKtor_client_coreHttpClient, LSDKKtor_client_coreHttpClientCall, LSDKKtor_client_coreHttpClientCallCompanion, LSDKKtor_client_coreHttpClientConfig<T>, LSDKKtor_client_coreHttpClientEngineConfig, LSDKKtor_client_coreHttpReceivePipeline, LSDKKtor_client_coreHttpReceivePipelinePhases, LSDKKtor_client_coreHttpRequestBuilder, LSDKKtor_client_coreHttpRequestBuilderCompanion, LSDKKtor_client_coreHttpRequestData, LSDKKtor_client_coreHttpRequestPipeline, LSDKKtor_client_coreHttpRequestPipelinePhases, LSDKKtor_client_coreHttpResponse, LSDKKtor_client_coreHttpResponseContainer, LSDKKtor_client_coreHttpResponseData, LSDKKtor_client_coreHttpResponsePipeline, LSDKKtor_client_coreHttpResponsePipelinePhases, LSDKKtor_client_coreHttpSendPipeline, LSDKKtor_client_coreHttpSendPipelinePhases, LSDKKtor_client_coreProxyConfig, LSDKKtor_eventsEventDefinition<T>, LSDKKtor_eventsEvents, LSDKKtor_httpContentType, LSDKKtor_httpContentTypeCompanion, LSDKKtor_httpHeaderValueParam, LSDKKtor_httpHeaderValueWithParameters, LSDKKtor_httpHeaderValueWithParametersCompanion, LSDKKtor_httpHeadersBuilder, LSDKKtor_httpHttpMethod, LSDKKtor_httpHttpMethodCompanion, LSDKKtor_httpHttpProtocolVersion, LSDKKtor_httpHttpProtocolVersionCompanion, LSDKKtor_httpHttpStatusCode, LSDKKtor_httpHttpStatusCodeCompanion, LSDKKtor_httpOutgoingContent, LSDKKtor_httpURLBuilder, LSDKKtor_httpURLBuilderCompanion, LSDKKtor_httpURLProtocol, LSDKKtor_httpURLProtocolCompanion, LSDKKtor_httpUrl, LSDKKtor_httpUrlCompanion, LSDKKtor_utilsAttributeKey<T>, LSDKKtor_utilsGMTDate, LSDKKtor_utilsGMTDateCompanion, LSDKKtor_utilsMonth, LSDKKtor_utilsMonthCompanion, LSDKKtor_utilsPipeline<TSubject, TContext>, LSDKKtor_utilsPipelinePhase, LSDKKtor_utilsStringValuesBuilderImpl, LSDKKtor_utilsTypeInfo, LSDKKtor_utilsWeekDay, LSDKKtor_utilsWeekDayCompanion, LSDKLifestream, LSDKLifestreamConfig, LSDKLifestreamConfigCompanion, LSDKLink, LSDKLinkCompanion, LSDKLinkRequestBuilder, LSDKLink_, LSDKLoggerFactory, LSDKOrganization, LSDKOrganizationCompanion, LSDKOrganization_, LSDKSlugGenerator, LSDKSlugGeneratorConfig, LSDKUserMessage, LSDKUserMessageCompanion;
 
-@protocol LSDKKermit_coreLoggerConfig, LSDKKermit_coreMutableLoggerConfig, LSDKKotlinAnnotation, LSDKKotlinAutoCloseable, LSDKKotlinComparable, LSDKKotlinContinuation, LSDKKotlinContinuationInterceptor, LSDKKotlinCoroutineContext, LSDKKotlinCoroutineContextElement, LSDKKotlinCoroutineContextKey, LSDKKotlinFunction, LSDKKotlinIterator, LSDKKotlinKAnnotatedElement, LSDKKotlinKClass, LSDKKotlinKClassifier, LSDKKotlinKDeclarationContainer, LSDKKotlinKType, LSDKKotlinMapEntry, LSDKKotlinSequence, LSDKKotlinSuspendFunction2, LSDKKotlinx_coroutines_coreChildHandle, LSDKKotlinx_coroutines_coreChildJob, LSDKKotlinx_coroutines_coreCoroutineScope, LSDKKotlinx_coroutines_coreDisposableHandle, LSDKKotlinx_coroutines_coreFlow, LSDKKotlinx_coroutines_coreFlowCollector, LSDKKotlinx_coroutines_coreJob, LSDKKotlinx_coroutines_coreParentJob, LSDKKotlinx_coroutines_coreRunnable, LSDKKotlinx_coroutines_coreSelectClause, LSDKKotlinx_coroutines_coreSelectClause0, LSDKKotlinx_coroutines_coreSelectInstance, LSDKKotlinx_io_coreRawSink, LSDKKotlinx_io_coreRawSource, LSDKKotlinx_io_coreSink, LSDKKotlinx_io_coreSource, LSDKKotlinx_serialization_coreCompositeDecoder, LSDKKotlinx_serialization_coreCompositeEncoder, LSDKKotlinx_serialization_coreDecoder, LSDKKotlinx_serialization_coreDeserializationStrategy, LSDKKotlinx_serialization_coreEncoder, LSDKKotlinx_serialization_coreKSerializer, LSDKKotlinx_serialization_coreSerialDescriptor, LSDKKotlinx_serialization_coreSerializationStrategy, LSDKKotlinx_serialization_coreSerializersModuleCollector, LSDKKtor_client_coreHttpClientEngine, LSDKKtor_client_coreHttpClientEngineCapability, LSDKKtor_client_coreHttpClientPlugin, LSDKKtor_client_coreHttpRequest, LSDKKtor_httpHeaders, LSDKKtor_httpHttpMessage, LSDKKtor_httpHttpMessageBuilder, LSDKKtor_httpParameters, LSDKKtor_httpParametersBuilder, LSDKKtor_ioByteReadChannel, LSDKKtor_ioCloseable, LSDKKtor_ioJvmSerializable, LSDKKtor_utilsAttributes, LSDKKtor_utilsStringValues, LSDKKtor_utilsStringValuesBuilder, LSDKLifestreamError, LSDKMultiplatform_settings_coroutinesFlowSettings, LSDKMultiplatform_settings_coroutinesSuspendSettings, LSDKSecureStorage;
+@protocol LSDKKermit_coreLoggerConfig, LSDKKermit_coreMutableLoggerConfig, LSDKKotlinAnnotation, LSDKKotlinAutoCloseable, LSDKKotlinComparable, LSDKKotlinContinuation, LSDKKotlinContinuationInterceptor, LSDKKotlinCoroutineContext, LSDKKotlinCoroutineContextElement, LSDKKotlinCoroutineContextKey, LSDKKotlinFunction, LSDKKotlinIterator, LSDKKotlinKAnnotatedElement, LSDKKotlinKClass, LSDKKotlinKClassifier, LSDKKotlinKDeclarationContainer, LSDKKotlinKType, LSDKKotlinMapEntry, LSDKKotlinSequence, LSDKKotlinSuspendFunction2, LSDKKotlinx_coroutines_coreChildHandle, LSDKKotlinx_coroutines_coreChildJob, LSDKKotlinx_coroutines_coreCoroutineScope, LSDKKotlinx_coroutines_coreDisposableHandle, LSDKKotlinx_coroutines_coreFlow, LSDKKotlinx_coroutines_coreFlowCollector, LSDKKotlinx_coroutines_coreJob, LSDKKotlinx_coroutines_coreParentJob, LSDKKotlinx_coroutines_coreRunnable, LSDKKotlinx_coroutines_coreSelectClause, LSDKKotlinx_coroutines_coreSelectClause0, LSDKKotlinx_coroutines_coreSelectInstance, LSDKKotlinx_io_coreRawSink, LSDKKotlinx_io_coreRawSource, LSDKKotlinx_io_coreSink, LSDKKotlinx_io_coreSource, LSDKKotlinx_serialization_coreCompositeDecoder, LSDKKotlinx_serialization_coreCompositeEncoder, LSDKKotlinx_serialization_coreDecoder, LSDKKotlinx_serialization_coreDeserializationStrategy, LSDKKotlinx_serialization_coreEncoder, LSDKKotlinx_serialization_coreKSerializer, LSDKKotlinx_serialization_coreSerialDescriptor, LSDKKotlinx_serialization_coreSerializationStrategy, LSDKKotlinx_serialization_coreSerializersModuleCollector, LSDKKtor_client_coreHttpClientEngine, LSDKKtor_client_coreHttpClientEngineCapability, LSDKKtor_client_coreHttpClientPlugin, LSDKKtor_client_coreHttpRequest, LSDKKtor_httpHeaders, LSDKKtor_httpHttpMessage, LSDKKtor_httpHttpMessageBuilder, LSDKKtor_httpParameters, LSDKKtor_httpParametersBuilder, LSDKKtor_ioByteReadChannel, LSDKKtor_ioCloseable, LSDKKtor_ioJvmSerializable, LSDKKtor_utilsAttributes, LSDKKtor_utilsStringValues, LSDKKtor_utilsStringValuesBuilder, LSDKLifestreamError, LSDKMultiplatform_settings_coroutinesFlowSettings, LSDKMultiplatform_settings_coroutinesSuspendSettings, LSDKSecureStorage, LSDKSlugGeneratorRandomSource;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -221,13 +221,13 @@ __attribute__((swift_name("Lifestream")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)createLinkBuilder:(void (^)(LSDKLinkRequestBuilder *))builder completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(builder:completionHandler:)")));
+- (void)createLinkPrefix:(NSString * _Nullable)prefix builder:(void (^)(LSDKLinkRequestBuilder *))builder completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(prefix:builder:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)createLinkOnSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(LSDKKotlinThrowable *))onError builder:(void (^)(LSDKLinkRequestBuilder *))builder completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(onSuccess:onError:builder:completionHandler:)")));
+- (void)createLinkPrefix:(NSString * _Nullable)prefix onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(LSDKKotlinThrowable *))onError builder:(void (^)(LSDKLinkRequestBuilder *))builder completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(prefix:onSuccess:onError:builder:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -774,6 +774,7 @@ __attribute__((swift_name("LinkRequestBuilder")))
 @property NSString * _Nullable ogImage __attribute__((swift_name("ogImage")));
 @property NSString * _Nullable ogTitle __attribute__((swift_name("ogTitle")));
 @property NSString *orgId __attribute__((swift_name("orgId")));
+@property NSString * _Nullable prefix __attribute__((swift_name("prefix")));
 @property NSString * _Nullable slug __attribute__((swift_name("slug")));
 @property NSString *targetUrl __attribute__((swift_name("targetUrl")));
 @property NSString * _Nullable utmCampaign __attribute__((swift_name("utmCampaign")));
@@ -877,6 +878,59 @@ __attribute__((swift_name("SettingsFactory")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (id<LSDKSecureStorage>)createSettings __attribute__((swift_name("createSettings()")));
+@end
+
+
+/**
+ * Slug generator for URL short codes.
+ * - KMP-safe: commonMain + expect/actual for secure randomness.
+ * - Batch uniqueness check to minimize DB round-trips.
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SlugGenerator")))
+@interface LSDKSlugGenerator : LSDKBase
++ (instancetype)alloc __attribute__((unavailable));
+
+/**
+ * Slug generator for URL short codes.
+ * - KMP-safe: commonMain + expect/actual for secure randomness.
+ * - Batch uniqueness check to minimize DB round-trips.
+ */
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)slugGenerator __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) LSDKSlugGenerator *shared __attribute__((swift_name("shared")));
+
+/** Generate a unique slug. Grows length under contention. */
+- (id _Nullable)generateConfig:(LSDKSlugGeneratorConfig *)config fetchAvailable:(NSSet<NSString *> *(^)(NSArray<NSString *> *))fetchAvailable prefix:(NSString * _Nullable)prefix random:(id<LSDKSlugGeneratorRandomSource>)random __attribute__((swift_name("generate(config:fetchAvailable:prefix:random:)")));
+
+/** Base36 (lowercase+digits): stable on case-insensitive infra and easy to read. */
+@property (readonly) LSDKKotlinCharArray *ALPHABET_BASE36 __attribute__((swift_name("ALPHABET_BASE36")));
+
+/** Base62 (full alnum): maximize entropy per char (case-sensitive). */
+@property (readonly) LSDKKotlinCharArray *ALPHABET_BASE62 __attribute__((swift_name("ALPHABET_BASE62")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SlugGenerator.Config")))
+@interface LSDKSlugGeneratorConfig : LSDKBase
+- (instancetype)initWithAlphabet:(LSDKKotlinCharArray *)alphabet minLength:(int32_t)minLength maxLength:(int32_t)maxLength maxAttempts:(int32_t)maxAttempts batchSize:(int32_t)batchSize __attribute__((swift_name("init(alphabet:minLength:maxLength:maxAttempts:batchSize:)"))) __attribute__((objc_designated_initializer));
+- (LSDKSlugGeneratorConfig *)doCopyAlphabet:(LSDKKotlinCharArray *)alphabet minLength:(int32_t)minLength maxLength:(int32_t)maxLength maxAttempts:(int32_t)maxAttempts batchSize:(int32_t)batchSize __attribute__((swift_name("doCopy(alphabet:minLength:maxLength:maxAttempts:batchSize:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) LSDKKotlinCharArray *alphabet __attribute__((swift_name("alphabet")));
+@property (readonly) int32_t batchSize __attribute__((swift_name("batchSize")));
+@property (readonly) int32_t maxAttempts __attribute__((swift_name("maxAttempts")));
+@property (readonly) int32_t maxLength __attribute__((swift_name("maxLength")));
+@property (readonly) int32_t minLength __attribute__((swift_name("minLength")));
+@end
+
+__attribute__((swift_name("SlugGeneratorRandomSource")))
+@protocol LSDKSlugGeneratorRandomSource
+@required
+
+/** Returns [0, boundExclusive) uniformly (no modulo bias in actual impl). */
+- (int32_t)nextBoundedBoundExclusive:(int32_t)boundExclusive __attribute__((swift_name("nextBounded(boundExclusive:)")));
 @end
 
 @interface LSDKApiResponseDto (Extensions)
@@ -1242,6 +1296,19 @@ __attribute__((swift_name("Multiplatform_settings_coroutinesFlowSettings")))
 - (id<LSDKKotlinx_coroutines_coreFlow>)getStringOrNullFlowKey:(NSString *)key __attribute__((swift_name("getStringOrNullFlow(key:)")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinCharArray")))
+@interface LSDKKotlinCharArray : LSDKBase
++ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
++ (instancetype)arrayWithSize:(int32_t)size init:(id (^)(LSDKInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (unichar)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (LSDKKotlinCharIterator *)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(unichar)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
 __attribute__((swift_name("KotlinComparable")))
 @protocol LSDKKotlinComparable
 @required
@@ -1581,6 +1648,14 @@ __attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)collectCollector:(id<LSDKKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
+@end
+
+__attribute__((swift_name("KotlinCharIterator")))
+@interface LSDKKotlinCharIterator : LSDKBase <LSDKKotlinIterator>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (id)next __attribute__((swift_name("next()")));
+- (unichar)nextChar __attribute__((swift_name("nextChar()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
