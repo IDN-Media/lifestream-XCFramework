@@ -14,7 +14,7 @@ Swift Package Manager distribution for Lifestream SDK.
 **Package.swift:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/IDN-Media/lifestream-XCFramework", from: "1.0.0")
+    .package(url: "https://github.com/IDN-Media/lifestream-XCFramework", from: "1.2.0")
 ]
 ```
 
