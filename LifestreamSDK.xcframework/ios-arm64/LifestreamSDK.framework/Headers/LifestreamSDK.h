@@ -950,6 +950,12 @@ __attribute__((swift_name("PlatformContext_iosKt")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PlatformInfo_iosKt")))
+@interface LSDKPlatformInfo_iosKt : LSDKBase
++ (NSString *)getUserAgent __attribute__((swift_name("getUserAgent()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinArray")))
 @interface LSDKKotlinArray<T> : LSDKBase
 + (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(LSDKInt *))init __attribute__((swift_name("init(size:init:)")));
