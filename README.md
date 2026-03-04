@@ -35,14 +35,13 @@ Lifestream.shared.configure(
 ```swift
 Task {
     try await Lifestream.shared.createLink(
-        prefix: "custom", // Optional: custom domain prefix (e.g., "custom.idn.link")
+        targetUrl: "https://example.com/product/123",
+        deepLink: "myapp://product/123",
         onSuccess: { shortUrl in print("Created: \(shortUrl)") },
-        onError: { error in print("Error: \(error)") }
-    ) { builder in
-        builder.targetUrl = "https://example.com/product/123"
-        builder.deepLink = "myapp://product/123"
-        builder.name = "Product Link"
-    }
+        onError: { error in print("Error: \(error)") },
+        prefix: "custom", // Optional: custom domain prefix (e.g., "custom.idn.link")
+        name: "Product Link" // Optional
+    )
 }
 ```
 
