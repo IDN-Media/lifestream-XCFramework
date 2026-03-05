@@ -22,45 +22,55 @@ dependencies: [
 
 ### Setup
 ```swift
-import Lifestream
+import LifestreamSDK
 
+// In your App init or AppDelegate
 Lifestream.shared.configure(
     appId: "your-app-id",
-    secretKey: "your-secret-key", 
+    secretKey: "your-secret-key",
     organization: "your-organization"
 )
 ```
 
 ### Create Link
 ```swift
-Task {
-    try await Lifestream.shared.createLink(
-        targetUrl: "https://example.com/product/123",
-        deepLink: "myapp://product/123",
-        onSuccess: { shortUrl in print("Created: \(shortUrl)") },
-        onError: { error in print("Error: \(error)") },
-        prefix: "custom", // Optional: custom domain prefix (e.g., "custom.idn.link")
-        name: "Product Link" // Optional
-    )
-}
+// Minimal
+let params = CreateLinkParams(
+    targetUrl: "https://example.com/product/123",
+    deepLink: "myapp://product/123",
+    prefix: nil,
+    name: nil
+)
+
+// With optional prefix and name
+let params = CreateLinkParams(
+    targetUrl: "https://example.com/product/123",
+    deepLink: "myapp://product/123",
+    prefix: "custom",
+    name: "Product Link"
+)
+
+Lifestream.shared.createLink(
+    params: params,
+    onSuccess: { shortUrl in print("Created: \(shortUrl)") },
+    onError: { error in print("Error: \(error)") }
+)
 ```
 
 ### Resolve Deeplink
 ```swift
-Task {
-    try await Lifestream.shared.resolveDeeplink(
-        url: url.absoluteString,
-        onSuccess: { deeplink in handleDeeplink(deeplink) },
-        onError: { error in print("Error: \(error)") }
-    )
-}
+Lifestream.shared.resolveDeeplink(
+    url: url.absoluteString,
+    onSuccess: { deeplink in handleDeeplink(deeplink) },
+    onError: { error in print("Error: \(error)") }
+)
 ```
 
 ## Requirements
 
-- iOS 13.0+
-- Xcode 12.0+
-- Swift 5.3+
+- iOS 18.2+
+- Xcode 16.0+
+- Swift 5.0+
 
 ## License
 
