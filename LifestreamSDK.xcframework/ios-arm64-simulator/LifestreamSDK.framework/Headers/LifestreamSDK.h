@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class LSDKApiError, LSDKApiErrorCompanion, LSDKApiResponseDto<T>, LSDKApiResponseDtoCompanion, LSDKCreateLinkRequestDto, LSDKCreateLinkRequestDtoCompanion, LSDKEncryptionUtil, LSDKHttpClientFactory, LSDKKermitLogger, LSDKKermitLoggerCompanion, LSDKKermit_coreBaseLogger, LSDKKermit_coreLogWriter, LSDKKermit_coreSeverity, LSDKKotlinAbstractCoroutineContextElement, LSDKKotlinAbstractCoroutineContextKey<B, E>, LSDKKotlinArray<T>, LSDKKotlinByteArray, LSDKKotlinByteIterator, LSDKKotlinCancellationException, LSDKKotlinCharArray, LSDKKotlinCharIterator, LSDKKotlinEnum<E>, LSDKKotlinEnumCompanion, LSDKKotlinException, LSDKKotlinIllegalArgumentException, LSDKKotlinIllegalStateException, LSDKKotlinKTypeProjection, LSDKKotlinKTypeProjectionCompanion, LSDKKotlinKVariance, LSDKKotlinNothing, LSDKKotlinRuntimeException, LSDKKotlinThrowable, LSDKKotlinUnit, LSDKKotlinx_coroutines_coreCoroutineDispatcher, LSDKKotlinx_coroutines_coreCoroutineDispatcherKey, LSDKKotlinx_io_coreBuffer, LSDKKotlinx_serialization_coreSerialKind, LSDKKotlinx_serialization_coreSerializersModule, LSDKKotlinx_serialization_jsonJsonElement, LSDKKotlinx_serialization_jsonJsonElementCompanion, LSDKKtor_client_coreHttpClient, LSDKKtor_client_coreHttpClientCall, LSDKKtor_client_coreHttpClientCallCompanion, LSDKKtor_client_coreHttpClientConfig<T>, LSDKKtor_client_coreHttpClientEngineConfig, LSDKKtor_client_coreHttpReceivePipeline, LSDKKtor_client_coreHttpReceivePipelinePhases, LSDKKtor_client_coreHttpRequestBuilder, LSDKKtor_client_coreHttpRequestBuilderCompanion, LSDKKtor_client_coreHttpRequestData, LSDKKtor_client_coreHttpRequestPipeline, LSDKKtor_client_coreHttpRequestPipelinePhases, LSDKKtor_client_coreHttpResponse, LSDKKtor_client_coreHttpResponseContainer, LSDKKtor_client_coreHttpResponseData, LSDKKtor_client_coreHttpResponsePipeline, LSDKKtor_client_coreHttpResponsePipelinePhases, LSDKKtor_client_coreHttpSendPipeline, LSDKKtor_client_coreHttpSendPipelinePhases, LSDKKtor_client_coreProxyConfig, LSDKKtor_eventsEventDefinition<T>, LSDKKtor_eventsEvents, LSDKKtor_httpContentType, LSDKKtor_httpContentTypeCompanion, LSDKKtor_httpHeaderValueParam, LSDKKtor_httpHeaderValueWithParameters, LSDKKtor_httpHeaderValueWithParametersCompanion, LSDKKtor_httpHeadersBuilder, LSDKKtor_httpHttpMethod, LSDKKtor_httpHttpMethodCompanion, LSDKKtor_httpHttpProtocolVersion, LSDKKtor_httpHttpProtocolVersionCompanion, LSDKKtor_httpHttpStatusCode, LSDKKtor_httpHttpStatusCodeCompanion, LSDKKtor_httpOutgoingContent, LSDKKtor_httpURLBuilder, LSDKKtor_httpURLBuilderCompanion, LSDKKtor_httpURLProtocol, LSDKKtor_httpURLProtocolCompanion, LSDKKtor_httpUrl, LSDKKtor_httpUrlCompanion, LSDKKtor_utilsAttributeKey<T>, LSDKKtor_utilsGMTDate, LSDKKtor_utilsGMTDateCompanion, LSDKKtor_utilsMonth, LSDKKtor_utilsMonthCompanion, LSDKKtor_utilsPipeline<TSubject, TContext>, LSDKKtor_utilsPipelinePhase, LSDKKtor_utilsStringValuesBuilderImpl, LSDKKtor_utilsTypeInfo, LSDKKtor_utilsWeekDay, LSDKKtor_utilsWeekDayCompanion, LSDKLifestream, LSDKLifestreamConfig, LSDKLifestreamConfigCompanion, LSDKLink, LSDKLinkCompanion, LSDKLinkRequestBuilder, LSDKLink_, LSDKLoggerFactory, LSDKOrganization, LSDKOrganizationCompanion, LSDKOrganization_, LSDKSlugGenerator, LSDKSlugGeneratorConfig, LSDKUserMessage, LSDKUserMessageCompanion;
+@class LSDKApiError, LSDKApiErrorCompanion, LSDKApiResponseDto<T>, LSDKApiResponseDtoCompanion, LSDKCreateLinkParams, LSDKCreateLinkRequestDto, LSDKCreateLinkRequestDtoCompanion, LSDKHttpClientFactory, LSDKKermitLogger, LSDKKermitLoggerCompanion, LSDKKermit_coreBaseLogger, LSDKKermit_coreLogWriter, LSDKKermit_coreSeverity, LSDKKotlinAbstractCoroutineContextElement, LSDKKotlinAbstractCoroutineContextKey<B, E>, LSDKKotlinArray<T>, LSDKKotlinByteArray, LSDKKotlinByteIterator, LSDKKotlinCancellationException, LSDKKotlinCharArray, LSDKKotlinCharIterator, LSDKKotlinEnum<E>, LSDKKotlinEnumCompanion, LSDKKotlinException, LSDKKotlinIllegalArgumentException, LSDKKotlinIllegalStateException, LSDKKotlinKTypeProjection, LSDKKotlinKTypeProjectionCompanion, LSDKKotlinKVariance, LSDKKotlinNothing, LSDKKotlinRuntimeException, LSDKKotlinThrowable, LSDKKotlinUnit, LSDKKotlinx_coroutines_coreCoroutineDispatcher, LSDKKotlinx_coroutines_coreCoroutineDispatcherKey, LSDKKotlinx_io_coreBuffer, LSDKKotlinx_serialization_coreSerialKind, LSDKKotlinx_serialization_coreSerializersModule, LSDKKotlinx_serialization_jsonJsonElement, LSDKKotlinx_serialization_jsonJsonElementCompanion, LSDKKtor_client_coreHttpClient, LSDKKtor_client_coreHttpClientCall, LSDKKtor_client_coreHttpClientCallCompanion, LSDKKtor_client_coreHttpClientConfig<T>, LSDKKtor_client_coreHttpClientEngineConfig, LSDKKtor_client_coreHttpReceivePipeline, LSDKKtor_client_coreHttpReceivePipelinePhases, LSDKKtor_client_coreHttpRequestBuilder, LSDKKtor_client_coreHttpRequestBuilderCompanion, LSDKKtor_client_coreHttpRequestData, LSDKKtor_client_coreHttpRequestPipeline, LSDKKtor_client_coreHttpRequestPipelinePhases, LSDKKtor_client_coreHttpResponse, LSDKKtor_client_coreHttpResponseContainer, LSDKKtor_client_coreHttpResponseData, LSDKKtor_client_coreHttpResponsePipeline, LSDKKtor_client_coreHttpResponsePipelinePhases, LSDKKtor_client_coreHttpSendPipeline, LSDKKtor_client_coreHttpSendPipelinePhases, LSDKKtor_client_coreProxyConfig, LSDKKtor_eventsEventDefinition<T>, LSDKKtor_eventsEvents, LSDKKtor_httpContentType, LSDKKtor_httpContentTypeCompanion, LSDKKtor_httpHeaderValueParam, LSDKKtor_httpHeaderValueWithParameters, LSDKKtor_httpHeaderValueWithParametersCompanion, LSDKKtor_httpHeadersBuilder, LSDKKtor_httpHttpMethod, LSDKKtor_httpHttpMethodCompanion, LSDKKtor_httpHttpProtocolVersion, LSDKKtor_httpHttpProtocolVersionCompanion, LSDKKtor_httpHttpStatusCode, LSDKKtor_httpHttpStatusCodeCompanion, LSDKKtor_httpOutgoingContent, LSDKKtor_httpURLBuilder, LSDKKtor_httpURLBuilderCompanion, LSDKKtor_httpURLProtocol, LSDKKtor_httpURLProtocolCompanion, LSDKKtor_httpUrl, LSDKKtor_httpUrlCompanion, LSDKKtor_utilsAttributeKey<T>, LSDKKtor_utilsGMTDate, LSDKKtor_utilsGMTDateCompanion, LSDKKtor_utilsMonth, LSDKKtor_utilsMonthCompanion, LSDKKtor_utilsPipeline<TSubject, TContext>, LSDKKtor_utilsPipelinePhase, LSDKKtor_utilsStringValuesBuilderImpl, LSDKKtor_utilsTypeInfo, LSDKKtor_utilsWeekDay, LSDKKtor_utilsWeekDayCompanion, LSDKLifestream, LSDKLifestreamConfig, LSDKLifestreamConfigCompanion, LSDKLink, LSDKLinkDto, LSDKLinkDtoCompanion, LSDKLoggerFactory, LSDKOrganization, LSDKOrganizationDto, LSDKOrganizationDtoCompanion, LSDKSlugGenerator, LSDKSlugGeneratorConfig, LSDKUserMessage, LSDKUserMessageCompanion;
 
-@protocol LSDKKermit_coreLoggerConfig, LSDKKermit_coreMutableLoggerConfig, LSDKKotlinAnnotation, LSDKKotlinAutoCloseable, LSDKKotlinComparable, LSDKKotlinContinuation, LSDKKotlinContinuationInterceptor, LSDKKotlinCoroutineContext, LSDKKotlinCoroutineContextElement, LSDKKotlinCoroutineContextKey, LSDKKotlinFunction, LSDKKotlinIterator, LSDKKotlinKAnnotatedElement, LSDKKotlinKClass, LSDKKotlinKClassifier, LSDKKotlinKDeclarationContainer, LSDKKotlinKType, LSDKKotlinMapEntry, LSDKKotlinSequence, LSDKKotlinSuspendFunction2, LSDKKotlinx_coroutines_coreChildHandle, LSDKKotlinx_coroutines_coreChildJob, LSDKKotlinx_coroutines_coreCoroutineScope, LSDKKotlinx_coroutines_coreDisposableHandle, LSDKKotlinx_coroutines_coreFlow, LSDKKotlinx_coroutines_coreFlowCollector, LSDKKotlinx_coroutines_coreJob, LSDKKotlinx_coroutines_coreParentJob, LSDKKotlinx_coroutines_coreRunnable, LSDKKotlinx_coroutines_coreSelectClause, LSDKKotlinx_coroutines_coreSelectClause0, LSDKKotlinx_coroutines_coreSelectInstance, LSDKKotlinx_io_coreRawSink, LSDKKotlinx_io_coreRawSource, LSDKKotlinx_io_coreSink, LSDKKotlinx_io_coreSource, LSDKKotlinx_serialization_coreCompositeDecoder, LSDKKotlinx_serialization_coreCompositeEncoder, LSDKKotlinx_serialization_coreDecoder, LSDKKotlinx_serialization_coreDeserializationStrategy, LSDKKotlinx_serialization_coreEncoder, LSDKKotlinx_serialization_coreKSerializer, LSDKKotlinx_serialization_coreSerialDescriptor, LSDKKotlinx_serialization_coreSerializationStrategy, LSDKKotlinx_serialization_coreSerializersModuleCollector, LSDKKtor_client_coreHttpClientEngine, LSDKKtor_client_coreHttpClientEngineCapability, LSDKKtor_client_coreHttpClientPlugin, LSDKKtor_client_coreHttpRequest, LSDKKtor_httpHeaders, LSDKKtor_httpHttpMessage, LSDKKtor_httpHttpMessageBuilder, LSDKKtor_httpParameters, LSDKKtor_httpParametersBuilder, LSDKKtor_ioByteReadChannel, LSDKKtor_ioCloseable, LSDKKtor_ioJvmSerializable, LSDKKtor_utilsAttributes, LSDKKtor_utilsStringValues, LSDKKtor_utilsStringValuesBuilder, LSDKLifestreamError, LSDKMultiplatform_settings_coroutinesFlowSettings, LSDKMultiplatform_settings_coroutinesSuspendSettings, LSDKSecureStorage, LSDKSlugGeneratorRandomSource;
+@protocol LSDKKermit_coreLoggerConfig, LSDKKermit_coreMutableLoggerConfig, LSDKKotlinAnnotation, LSDKKotlinAutoCloseable, LSDKKotlinComparable, LSDKKotlinContinuation, LSDKKotlinContinuationInterceptor, LSDKKotlinCoroutineContext, LSDKKotlinCoroutineContextElement, LSDKKotlinCoroutineContextKey, LSDKKotlinFunction, LSDKKotlinIterator, LSDKKotlinKAnnotatedElement, LSDKKotlinKClass, LSDKKotlinKClassifier, LSDKKotlinKDeclarationContainer, LSDKKotlinKType, LSDKKotlinMapEntry, LSDKKotlinSequence, LSDKKotlinSuspendFunction2, LSDKKotlinx_coroutines_coreChildHandle, LSDKKotlinx_coroutines_coreChildJob, LSDKKotlinx_coroutines_coreCoroutineScope, LSDKKotlinx_coroutines_coreDisposableHandle, LSDKKotlinx_coroutines_coreJob, LSDKKotlinx_coroutines_coreParentJob, LSDKKotlinx_coroutines_coreRunnable, LSDKKotlinx_coroutines_coreSelectClause, LSDKKotlinx_coroutines_coreSelectClause0, LSDKKotlinx_coroutines_coreSelectInstance, LSDKKotlinx_io_coreRawSink, LSDKKotlinx_io_coreRawSource, LSDKKotlinx_io_coreSink, LSDKKotlinx_io_coreSource, LSDKKotlinx_serialization_coreCompositeDecoder, LSDKKotlinx_serialization_coreCompositeEncoder, LSDKKotlinx_serialization_coreDecoder, LSDKKotlinx_serialization_coreDeserializationStrategy, LSDKKotlinx_serialization_coreEncoder, LSDKKotlinx_serialization_coreKSerializer, LSDKKotlinx_serialization_coreSerialDescriptor, LSDKKotlinx_serialization_coreSerializationStrategy, LSDKKotlinx_serialization_coreSerializersModuleCollector, LSDKKtor_client_coreHttpClientEngine, LSDKKtor_client_coreHttpClientEngineCapability, LSDKKtor_client_coreHttpClientPlugin, LSDKKtor_client_coreHttpRequest, LSDKKtor_httpHeaders, LSDKKtor_httpHttpMessage, LSDKKtor_httpHttpMessageBuilder, LSDKKtor_httpParameters, LSDKKtor_httpParametersBuilder, LSDKKtor_ioByteReadChannel, LSDKKtor_ioCloseable, LSDKKtor_ioJvmSerializable, LSDKKtor_utilsAttributes, LSDKKtor_utilsStringValues, LSDKKtor_utilsStringValuesBuilder, LSDKLifestreamError, LSDKSlugGeneratorRandomSource;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -197,6 +197,17 @@ __attribute__((swift_name("LifestreamError")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("InvalidSlugError")))
+@interface LSDKInvalidSlugError : LSDKKotlinIllegalArgumentException <LSDKLifestreamError>
+- (instancetype)initWithSlug:(NSString *)slug __attribute__((swift_name("init(slug:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithCause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InvalidUrlError")))
 @interface LSDKInvalidUrlError : LSDKKotlinIllegalArgumentException <LSDKLifestreamError>
 - (instancetype)initWithExpectedPrefix:(NSString *)expectedPrefix __attribute__((swift_name("init(expectedPrefix:)"))) __attribute__((objc_designated_initializer));
@@ -215,33 +226,25 @@ __attribute__((swift_name("Lifestream")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)lifestream __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKLifestream *shared __attribute__((swift_name("shared")));
-- (void)configureAppId:(NSString *)appId secretKey:(NSString *)secretKey organization:(NSString *)organization isDebug:(BOOL)isDebug __attribute__((swift_name("configure(appId:secretKey:organization:isDebug:)")));
+- (void)configureAppId:(NSString *)appId secretKey:(NSString *)secretKey organization:(NSString *)organization sandbox:(BOOL)sandbox __attribute__((swift_name("configure(appId:secretKey:organization:sandbox:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)createLinkPrefix:(NSString * _Nullable)prefix builder:(void (^)(LSDKLinkRequestBuilder *))builder completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(prefix:builder:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)createLinkPrefix:(NSString * _Nullable)prefix onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(LSDKKotlinThrowable *))onError builder:(void (^)(LSDKLinkRequestBuilder *))builder completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(prefix:onSuccess:onError:builder:completionHandler:)")));
+- (void)createLinkParams:(LSDKCreateLinkParams *)params completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(params:completionHandler:)")));
+- (void)createLinkParams:(LSDKCreateLinkParams *)params onSuccess:(void (^)(NSString *slugUrl))onSuccess onError:(void (^)(LSDKKotlinThrowable *error))onError __attribute__((swift_name("createLink(params:onSuccess:onError:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)resolveDeeplinkUrl:(NSString *)url completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("resolveDeeplink(url:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)resolveDeeplinkUrl:(NSString *)url onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(LSDKKotlinThrowable *))onError completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("resolveDeeplink(url:onSuccess:onError:completionHandler:)")));
-@property (readonly) BOOL isDebug __attribute__((swift_name("isDebug")));
+- (void)resolveDeeplinkUrl:(NSString *)url onSuccess:(void (^)(NSString *deeplink))onSuccess onError:(void (^)(LSDKKotlinThrowable *error))onError __attribute__((swift_name("resolveDeeplink(url:onSuccess:onError:)")));
+- (void)setVerboseLoggingEnabled:(BOOL)enabled __attribute__((swift_name("setVerboseLogging(enabled:)")));
 @property (readonly) NSString * _Nullable organizationId __attribute__((swift_name("organizationId")));
+@property (readonly) BOOL sandbox __attribute__((swift_name("sandbox")));
+@property (readonly) BOOL verboseLogging __attribute__((swift_name("verboseLogging")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -274,6 +277,22 @@ __attribute__((swift_name("NotInitializedError")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RateLimitError")))
+@interface LSDKRateLimitError : LSDKKotlinException <LSDKLifestreamError>
+- (instancetype)initWithCode:(NSString *)code message:(NSString *)message reason:(NSString *)reason userTitle:(NSString * _Nullable)userTitle userMessage:(NSString * _Nullable)userMessage __attribute__((swift_name("init(code:message:reason:userTitle:userMessage:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithCause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (readonly) NSString *code __attribute__((swift_name("code")));
+@property (readonly) NSString *message __attribute__((swift_name("message")));
+@property (readonly) NSString *reason __attribute__((swift_name("reason")));
+@property (readonly) NSString * _Nullable userMessage __attribute__((swift_name("userMessage")));
+@property (readonly) NSString * _Nullable userTitle __attribute__((swift_name("userTitle")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ApiService")))
 @interface LSDKApiService : LSDKBase
 - (instancetype)initWithHttpClient:(LSDKKtor_client_coreHttpClient *)httpClient __attribute__((swift_name("init(httpClient:)"))) __attribute__((objc_designated_initializer));
@@ -282,19 +301,19 @@ __attribute__((swift_name("ApiService")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)createLinkRequest:(LSDKCreateLinkRequestDto *)request completionHandler:(void (^)(LSDKApiResponseDto<LSDKLink *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(request:completionHandler:)")));
+- (void)createLinkRequest:(LSDKCreateLinkRequestDto *)request completionHandler:(void (^)(LSDKApiResponseDto<LSDKLinkDto *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("createLink(request:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)getLinkSlug:(NSString *)slug orgSlug:(NSString *)orgSlug completionHandler:(void (^)(LSDKApiResponseDto<LSDKLink *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getLink(slug:orgSlug:completionHandler:)")));
+- (void)getLinkSlug:(NSString *)slug orgSlug:(NSString *)orgSlug completionHandler:(void (^)(LSDKApiResponseDto<LSDKLinkDto *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getLink(slug:orgSlug:completionHandler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)getOrganizationSlug:(NSString *)slug completionHandler:(void (^)(LSDKApiResponseDto<LSDKOrganization *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getOrganization(slug:completionHandler:)")));
+- (void)getOrganizationSlug:(NSString *)slug completionHandler:(void (^)(LSDKApiResponseDto<LSDKOrganizationDto *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getOrganization(slug:completionHandler:)")));
 @end
 
 
@@ -324,6 +343,20 @@ __attribute__((swift_name("ApiError.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKApiErrorCompanion *shared __attribute__((swift_name("shared")));
 - (id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ApiException")))
+@interface LSDKApiException : LSDKKotlinException
+- (instancetype)initWithCode:(NSString *)code message:(NSString *)message reason:(NSString *)reason __attribute__((swift_name("init(code:message:reason:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithCause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(LSDKKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (readonly) NSString *code __attribute__((swift_name("code")));
+@property (readonly) NSString *message __attribute__((swift_name("message")));
+@property (readonly) NSString *reason __attribute__((swift_name("reason")));
 @end
 
 
@@ -502,14 +535,14 @@ __attribute__((swift_name("CreateLinkRequestDto.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Link")))
-@interface LSDKLink : LSDKBase
+__attribute__((swift_name("LinkDto")))
+@interface LSDKLinkDto : LSDKBase
 - (instancetype)initWithId:(NSString *)id orgId:(NSString *)orgId name:(NSString * _Nullable)name slug:(NSString *)slug token:(NSString *)token targetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage clickCount:(int32_t)clickCount expireAt:(NSString * _Nullable)expireAt createdAt:(NSString *)createdAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("init(id:orgId:name:slug:token:targetUrl:deepLink:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:clickCount:expireAt:createdAt:createdBy:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) LSDKLinkCompanion *companion __attribute__((swift_name("companion")));
-- (LSDKLink *)doCopyId:(NSString *)id orgId:(NSString *)orgId name:(NSString * _Nullable)name slug:(NSString *)slug token:(NSString *)token targetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage clickCount:(int32_t)clickCount expireAt:(NSString * _Nullable)expireAt createdAt:(NSString *)createdAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("doCopy(id:orgId:name:slug:token:targetUrl:deepLink:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:clickCount:expireAt:createdAt:createdBy:)")));
+@property (class, readonly, getter=companion) LSDKLinkDtoCompanion *companion __attribute__((swift_name("companion")));
+- (LSDKLinkDto *)doCopyId:(NSString *)id orgId:(NSString *)orgId name:(NSString * _Nullable)name slug:(NSString *)slug token:(NSString *)token targetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage clickCount:(int32_t)clickCount expireAt:(NSString * _Nullable)expireAt createdAt:(NSString *)createdAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("doCopy(id:orgId:name:slug:token:targetUrl:deepLink:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:clickCount:expireAt:createdAt:createdBy:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (LSDKLink_ *)toDomain __attribute__((swift_name("toDomain()")));
+- (LSDKLink *)toDomain __attribute__((swift_name("toDomain()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 
 /**
@@ -608,12 +641,12 @@ __attribute__((swift_name("Link")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Link.Companion")))
-@interface LSDKLinkCompanion : LSDKBase
+__attribute__((swift_name("LinkDto.Companion")))
+@interface LSDKLinkDtoCompanion : LSDKBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) LSDKLinkCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) LSDKLinkDtoCompanion *shared __attribute__((swift_name("shared")));
 - (id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -623,14 +656,14 @@ __attribute__((swift_name("Link.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Organization")))
-@interface LSDKOrganization : LSDKBase
+__attribute__((swift_name("OrganizationDto")))
+@interface LSDKOrganizationDto : LSDKBase
 - (instancetype)initWithId:(NSString *)id slug:(NSString *)slug androidAssetLinks:(LSDKKotlinx_serialization_jsonJsonElement *)androidAssetLinks iosAssociation:(LSDKKotlinx_serialization_jsonJsonElement *)iosAssociation androidStoreUrl:(NSString * _Nullable)androidStoreUrl iosStoreUrl:(NSString * _Nullable)iosStoreUrl isActive:(BOOL)isActive createdAt:(NSString *)createdAt __attribute__((swift_name("init(id:slug:androidAssetLinks:iosAssociation:androidStoreUrl:iosStoreUrl:isActive:createdAt:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) LSDKOrganizationCompanion *companion __attribute__((swift_name("companion")));
-- (LSDKOrganization *)doCopyId:(NSString *)id slug:(NSString *)slug androidAssetLinks:(LSDKKotlinx_serialization_jsonJsonElement *)androidAssetLinks iosAssociation:(LSDKKotlinx_serialization_jsonJsonElement *)iosAssociation androidStoreUrl:(NSString * _Nullable)androidStoreUrl iosStoreUrl:(NSString * _Nullable)iosStoreUrl isActive:(BOOL)isActive createdAt:(NSString *)createdAt __attribute__((swift_name("doCopy(id:slug:androidAssetLinks:iosAssociation:androidStoreUrl:iosStoreUrl:isActive:createdAt:)")));
+@property (class, readonly, getter=companion) LSDKOrganizationDtoCompanion *companion __attribute__((swift_name("companion")));
+- (LSDKOrganizationDto *)doCopyId:(NSString *)id slug:(NSString *)slug androidAssetLinks:(LSDKKotlinx_serialization_jsonJsonElement *)androidAssetLinks iosAssociation:(LSDKKotlinx_serialization_jsonJsonElement *)iosAssociation androidStoreUrl:(NSString * _Nullable)androidStoreUrl iosStoreUrl:(NSString * _Nullable)iosStoreUrl isActive:(BOOL)isActive createdAt:(NSString *)createdAt __attribute__((swift_name("doCopy(id:slug:androidAssetLinks:iosAssociation:androidStoreUrl:iosStoreUrl:isActive:createdAt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (LSDKOrganization_ *)toDomain __attribute__((swift_name("toDomain()")));
+- (LSDKOrganization *)toDomain __attribute__((swift_name("toDomain()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 
 /**
@@ -673,12 +706,12 @@ __attribute__((swift_name("Organization")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Organization.Companion")))
-@interface LSDKOrganizationCompanion : LSDKBase
+__attribute__((swift_name("OrganizationDto.Companion")))
+@interface LSDKOrganizationDtoCompanion : LSDKBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) LSDKOrganizationCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) LSDKOrganizationDtoCompanion *shared __attribute__((swift_name("shared")));
 - (id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -702,6 +735,31 @@ __attribute__((swift_name("LoggerFactory")))
 - (LSDKKermitLogger *)createTag:(NSString *)tag __attribute__((swift_name("create(tag:)")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CreateLinkParams")))
+@interface LSDKCreateLinkParams : LSDKBase
+- (instancetype)initWithTargetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink prefix:(NSString * _Nullable)prefix name:(NSString * _Nullable)name slug:(NSString * _Nullable)slug utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage expiresAt:(NSString * _Nullable)expiresAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("init(targetUrl:deepLink:prefix:name:slug:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:expiresAt:createdBy:)"))) __attribute__((objc_designated_initializer));
+- (LSDKCreateLinkParams *)doCopyTargetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink prefix:(NSString * _Nullable)prefix name:(NSString * _Nullable)name slug:(NSString * _Nullable)slug utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage expiresAt:(NSString * _Nullable)expiresAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("doCopy(targetUrl:deepLink:prefix:name:slug:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:expiresAt:createdBy:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable createdBy __attribute__((swift_name("createdBy")));
+@property (readonly) NSString *deepLink __attribute__((swift_name("deepLink")));
+@property (readonly) NSString * _Nullable expiresAt __attribute__((swift_name("expiresAt")));
+@property (readonly) NSString * _Nullable name __attribute__((swift_name("name")));
+@property (readonly) NSString * _Nullable ogDescription __attribute__((swift_name("ogDescription")));
+@property (readonly) NSString * _Nullable ogImage __attribute__((swift_name("ogImage")));
+@property (readonly) NSString * _Nullable ogTitle __attribute__((swift_name("ogTitle")));
+@property (readonly) NSString * _Nullable prefix __attribute__((swift_name("prefix")));
+@property (readonly) NSString * _Nullable slug __attribute__((swift_name("slug")));
+@property (readonly) NSString *targetUrl __attribute__((swift_name("targetUrl")));
+@property (readonly) NSString * _Nullable utmCampaign __attribute__((swift_name("utmCampaign")));
+@property (readonly) NSString * _Nullable utmContent __attribute__((swift_name("utmContent")));
+@property (readonly) NSString * _Nullable utmMedium __attribute__((swift_name("utmMedium")));
+@property (readonly) NSString * _Nullable utmSource __attribute__((swift_name("utmSource")));
+@property (readonly) NSString * _Nullable utmTerm __attribute__((swift_name("utmTerm")));
+@end
+
 
 /**
  * @note annotations
@@ -716,9 +774,19 @@ __attribute__((swift_name("LifestreamConfig")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Transient
+*/
 @property (readonly) NSString *appId __attribute__((swift_name("appId")));
 @property (readonly) NSString *organization __attribute__((swift_name("organization")));
 @property (readonly) NSString *organizationId __attribute__((swift_name("organizationId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Transient
+*/
 @property (readonly) NSString *secretKey __attribute__((swift_name("secretKey")));
 @end
 
@@ -733,10 +801,10 @@ __attribute__((swift_name("LifestreamConfig.Companion")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Link_")))
-@interface LSDKLink_ : LSDKBase
+__attribute__((swift_name("Link")))
+@interface LSDKLink : LSDKBase
 - (instancetype)initWithId:(NSString *)id orgId:(NSString *)orgId name:(NSString * _Nullable)name slug:(NSString *)slug targetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink token:(NSString *)token utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage clickCount:(int32_t)clickCount expireAt:(NSString * _Nullable)expireAt createdAt:(NSString *)createdAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("init(id:orgId:name:slug:targetUrl:deepLink:token:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:clickCount:expireAt:createdAt:createdBy:)"))) __attribute__((objc_designated_initializer));
-- (LSDKLink_ *)doCopyId:(NSString *)id orgId:(NSString *)orgId name:(NSString * _Nullable)name slug:(NSString *)slug targetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink token:(NSString *)token utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage clickCount:(int32_t)clickCount expireAt:(NSString * _Nullable)expireAt createdAt:(NSString *)createdAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("doCopy(id:orgId:name:slug:targetUrl:deepLink:token:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:clickCount:expireAt:createdAt:createdBy:)")));
+- (LSDKLink *)doCopyId:(NSString *)id orgId:(NSString *)orgId name:(NSString * _Nullable)name slug:(NSString *)slug targetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink token:(NSString *)token utmSource:(NSString * _Nullable)utmSource utmMedium:(NSString * _Nullable)utmMedium utmCampaign:(NSString * _Nullable)utmCampaign utmTerm:(NSString * _Nullable)utmTerm utmContent:(NSString * _Nullable)utmContent ogTitle:(NSString * _Nullable)ogTitle ogDescription:(NSString * _Nullable)ogDescription ogImage:(NSString * _Nullable)ogImage clickCount:(int32_t)clickCount expireAt:(NSString * _Nullable)expireAt createdAt:(NSString *)createdAt createdBy:(NSString * _Nullable)createdBy __attribute__((swift_name("doCopy(id:orgId:name:slug:targetUrl:deepLink:token:utmSource:utmMedium:utmCampaign:utmTerm:utmContent:ogTitle:ogDescription:ogImage:clickCount:expireAt:createdAt:createdBy:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -762,55 +830,15 @@ __attribute__((swift_name("Link_")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("LinkRequestBuilder")))
-@interface LSDKLinkRequestBuilder : LSDKBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property NSString * _Nullable createdBy __attribute__((swift_name("createdBy")));
-@property NSString *deepLink __attribute__((swift_name("deepLink")));
-@property NSString * _Nullable expiresAt __attribute__((swift_name("expiresAt")));
-@property NSString * _Nullable name __attribute__((swift_name("name")));
-@property NSString * _Nullable ogDescription __attribute__((swift_name("ogDescription")));
-@property NSString * _Nullable ogImage __attribute__((swift_name("ogImage")));
-@property NSString * _Nullable ogTitle __attribute__((swift_name("ogTitle")));
-@property NSString *orgId __attribute__((swift_name("orgId")));
-@property NSString * _Nullable prefix __attribute__((swift_name("prefix")));
-@property NSString * _Nullable slug __attribute__((swift_name("slug")));
-@property NSString *targetUrl __attribute__((swift_name("targetUrl")));
-@property NSString * _Nullable utmCampaign __attribute__((swift_name("utmCampaign")));
-@property NSString * _Nullable utmContent __attribute__((swift_name("utmContent")));
-@property NSString * _Nullable utmMedium __attribute__((swift_name("utmMedium")));
-@property NSString * _Nullable utmSource __attribute__((swift_name("utmSource")));
-@property NSString * _Nullable utmTerm __attribute__((swift_name("utmTerm")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Organization_")))
-@interface LSDKOrganization_ : LSDKBase
-- (instancetype)initWithId:(NSString *)id slug:(NSString *)slug androidAssetLinks:(LSDKKotlinx_serialization_jsonJsonElement *)androidAssetLinks iosAssociation:(LSDKKotlinx_serialization_jsonJsonElement *)iosAssociation androidStoreUrl:(NSString * _Nullable)androidStoreUrl iosStoreUrl:(NSString * _Nullable)iosStoreUrl isActive:(BOOL)isActive createdAt:(NSString *)createdAt __attribute__((swift_name("init(id:slug:androidAssetLinks:iosAssociation:androidStoreUrl:iosStoreUrl:isActive:createdAt:)"))) __attribute__((objc_designated_initializer));
-- (LSDKOrganization_ *)doCopyId:(NSString *)id slug:(NSString *)slug androidAssetLinks:(LSDKKotlinx_serialization_jsonJsonElement *)androidAssetLinks iosAssociation:(LSDKKotlinx_serialization_jsonJsonElement *)iosAssociation androidStoreUrl:(NSString * _Nullable)androidStoreUrl iosStoreUrl:(NSString * _Nullable)iosStoreUrl isActive:(BOOL)isActive createdAt:(NSString *)createdAt __attribute__((swift_name("doCopy(id:slug:androidAssetLinks:iosAssociation:androidStoreUrl:iosStoreUrl:isActive:createdAt:)")));
+__attribute__((swift_name("Organization")))
+@interface LSDKOrganization : LSDKBase
+- (instancetype)initWithId:(NSString *)id slug:(NSString *)slug __attribute__((swift_name("init(id:slug:)"))) __attribute__((objc_designated_initializer));
+- (LSDKOrganization *)doCopyId:(NSString *)id slug:(NSString *)slug __attribute__((swift_name("doCopy(id:slug:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) LSDKKotlinx_serialization_jsonJsonElement *androidAssetLinks __attribute__((swift_name("androidAssetLinks")));
-@property (readonly) NSString * _Nullable androidStoreUrl __attribute__((swift_name("androidStoreUrl")));
-@property (readonly) NSString *createdAt __attribute__((swift_name("createdAt")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
-@property (readonly) LSDKKotlinx_serialization_jsonJsonElement *iosAssociation __attribute__((swift_name("iosAssociation")));
-@property (readonly) NSString * _Nullable iosStoreUrl __attribute__((swift_name("iosStoreUrl")));
-@property (readonly) BOOL isActive __attribute__((swift_name("isActive")));
 @property (readonly) NSString *slug __attribute__((swift_name("slug")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("EncryptionUtil")))
-@interface LSDKEncryptionUtil : LSDKBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)encryptionUtil __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) LSDKEncryptionUtil *shared __attribute__((swift_name("shared")));
-- (NSString *)decryptEncryptedData:(NSString *)encryptedData key:(NSString *)key __attribute__((swift_name("decrypt(encryptedData:key:)")));
-- (NSString *)encryptData:(NSString *)data key:(NSString *)key __attribute__((swift_name("encrypt(data:key:)")));
 @end
 
 __attribute__((swift_name("SecureStorage")))
@@ -842,44 +870,6 @@ __attribute__((swift_name("SecureStorage")))
 - (void)removeKey:(NSString *)key completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("remove(key:completionHandler:)")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("SecureStorageImpl")))
-@interface LSDKSecureStorageImpl : LSDKBase <LSDKSecureStorage>
-- (instancetype)initWithSettings:(id<LSDKMultiplatform_settings_coroutinesFlowSettings>)settings storageKey:(NSString *)storageKey __attribute__((swift_name("init(settings:storageKey:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)clearWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("clear(completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getStringKey:(NSString *)key completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getString(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putStringKey:(NSString *)key value:(NSString *)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putString(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)removeKey:(NSString *)key completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("remove(key:completionHandler:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("SettingsFactory")))
-@interface LSDKSettingsFactory : LSDKBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (id<LSDKSecureStorage>)createSettings __attribute__((swift_name("createSettings()")));
-@end
-
 
 /**
  * Slug generator for URL short codes.
@@ -902,6 +892,9 @@ __attribute__((swift_name("SlugGenerator")))
 
 /** Generate a unique slug. Grows length under contention. */
 - (id _Nullable)generateConfig:(LSDKSlugGeneratorConfig *)config fetchAvailable:(NSSet<NSString *> *(^)(NSArray<NSString *> *))fetchAvailable prefix:(NSString * _Nullable)prefix random:(id<LSDKSlugGeneratorRandomSource>)random __attribute__((swift_name("generate(config:fetchAvailable:prefix:random:)")));
+
+/** Generate a random slug without uniqueness checking. */
+- (NSString *)generateRandomPrefix:(NSString * _Nullable)prefix config:(LSDKSlugGeneratorConfig *)config __attribute__((swift_name("generateRandom(prefix:config:)")));
 
 /** Base36 (lowercase+digits): stable on case-insensitive infra and easy to read. */
 @property (readonly) LSDKKotlinCharArray *ALPHABET_BASE36 __attribute__((swift_name("ALPHABET_BASE36")));
@@ -938,9 +931,11 @@ __attribute__((swift_name("SlugGeneratorRandomSource")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("LogConfigKt")))
-@interface LSDKLogConfigKt : LSDKBase
-+ (LSDKKermit_coreSeverity *)getLogLevel __attribute__((swift_name("getLogLevel()")));
+__attribute__((swift_name("CreateLinkParamsKt")))
+@interface LSDKCreateLinkParamsKt : LSDKBase
+
+/** iOS-friendly factory — Kotlin/Native doesn't export default parameter values to Swift. */
++ (LSDKCreateLinkParams *)CreateLinkParamsTargetUrl:(NSString *)targetUrl deepLink:(NSString *)deepLink prefix:(NSString * _Nullable)prefix name:(NSString * _Nullable)name __attribute__((swift_name("CreateLinkParams(targetUrl:deepLink:prefix:name:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1142,166 +1137,6 @@ __attribute__((swift_name("KermitLogger")))
 @property (readonly) NSString *tag __attribute__((swift_name("tag")));
 @end
 
-__attribute__((swift_name("Multiplatform_settings_coroutinesSuspendSettings")))
-@protocol LSDKMultiplatform_settings_coroutinesSuspendSettings
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)clearWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("clear(completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getBooleanKey:(NSString *)key defaultValue:(BOOL)defaultValue completionHandler:(void (^)(LSDKBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getBoolean(key:defaultValue:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getBooleanOrNullKey:(NSString *)key completionHandler:(void (^)(LSDKBoolean * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getBooleanOrNull(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getDoubleKey:(NSString *)key defaultValue:(double)defaultValue completionHandler:(void (^)(LSDKDouble * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getDouble(key:defaultValue:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getDoubleOrNullKey:(NSString *)key completionHandler:(void (^)(LSDKDouble * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getDoubleOrNull(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getFloatKey:(NSString *)key defaultValue:(float)defaultValue completionHandler:(void (^)(LSDKFloat * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getFloat(key:defaultValue:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getFloatOrNullKey:(NSString *)key completionHandler:(void (^)(LSDKFloat * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getFloatOrNull(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getIntKey:(NSString *)key defaultValue:(int32_t)defaultValue completionHandler:(void (^)(LSDKInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getInt(key:defaultValue:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getIntOrNullKey:(NSString *)key completionHandler:(void (^)(LSDKInt * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getIntOrNull(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getLongKey:(NSString *)key defaultValue:(int64_t)defaultValue completionHandler:(void (^)(LSDKLong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getLong(key:defaultValue:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getLongOrNullKey:(NSString *)key completionHandler:(void (^)(LSDKLong * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getLongOrNull(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getStringKey:(NSString *)key defaultValue:(NSString *)defaultValue completionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getString(key:defaultValue:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getStringOrNullKey:(NSString *)key completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getStringOrNull(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)hasKeyKey:(NSString *)key completionHandler:(void (^)(LSDKBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("hasKey(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)keysWithCompletionHandler:(void (^)(NSSet<NSString *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("keys(completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putBooleanKey:(NSString *)key value:(BOOL)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putBoolean(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putDoubleKey:(NSString *)key value:(double)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putDouble(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putFloatKey:(NSString *)key value:(float)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putFloat(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putIntKey:(NSString *)key value:(int32_t)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putInt(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putLongKey:(NSString *)key value:(int64_t)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putLong(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)putStringKey:(NSString *)key value:(NSString *)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("putString(key:value:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)removeKey:(NSString *)key completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("remove(key:completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)sizeWithCompletionHandler:(void (^)(LSDKInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("size(completionHandler:)")));
-@end
-
-__attribute__((swift_name("Multiplatform_settings_coroutinesFlowSettings")))
-@protocol LSDKMultiplatform_settings_coroutinesFlowSettings <LSDKMultiplatform_settings_coroutinesSuspendSettings>
-@required
-- (id<LSDKKotlinx_coroutines_coreFlow>)getBooleanFlowKey:(NSString *)key defaultValue:(BOOL)defaultValue __attribute__((swift_name("getBooleanFlow(key:defaultValue:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getBooleanOrNullFlowKey:(NSString *)key __attribute__((swift_name("getBooleanOrNullFlow(key:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getDoubleFlowKey:(NSString *)key defaultValue:(double)defaultValue __attribute__((swift_name("getDoubleFlow(key:defaultValue:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getDoubleOrNullFlowKey:(NSString *)key __attribute__((swift_name("getDoubleOrNullFlow(key:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getFloatFlowKey:(NSString *)key defaultValue:(float)defaultValue __attribute__((swift_name("getFloatFlow(key:defaultValue:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getFloatOrNullFlowKey:(NSString *)key __attribute__((swift_name("getFloatOrNullFlow(key:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getIntFlowKey:(NSString *)key defaultValue:(int32_t)defaultValue __attribute__((swift_name("getIntFlow(key:defaultValue:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getIntOrNullFlowKey:(NSString *)key __attribute__((swift_name("getIntOrNullFlow(key:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getLongFlowKey:(NSString *)key defaultValue:(int64_t)defaultValue __attribute__((swift_name("getLongFlow(key:defaultValue:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getLongOrNullFlowKey:(NSString *)key __attribute__((swift_name("getLongOrNullFlow(key:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getStringFlowKey:(NSString *)key defaultValue:(NSString *)defaultValue __attribute__((swift_name("getStringFlow(key:defaultValue:)")));
-- (id<LSDKKotlinx_coroutines_coreFlow>)getStringOrNullFlowKey:(NSString *)key __attribute__((swift_name("getStringOrNullFlow(key:)")));
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinCharArray")))
 @interface LSDKKotlinCharArray : LSDKBase
@@ -1313,40 +1148,6 @@ __attribute__((swift_name("KotlinCharArray")))
 - (LSDKKotlinCharIterator *)iterator __attribute__((swift_name("iterator()")));
 - (void)setIndex:(int32_t)index value:(unichar)value __attribute__((swift_name("set(index:value:)")));
 @property (readonly) int32_t size __attribute__((swift_name("size")));
-@end
-
-__attribute__((swift_name("KotlinComparable")))
-@protocol LSDKKotlinComparable
-@required
-- (int32_t)compareToOther:(id _Nullable)other __attribute__((swift_name("compareTo(other:)")));
-@end
-
-__attribute__((swift_name("KotlinEnum")))
-@interface LSDKKotlinEnum<E> : LSDKBase <LSDKKotlinComparable>
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) LSDKKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kermit_coreSeverity")))
-@interface LSDKKermit_coreSeverity : LSDKKotlinEnum<LSDKKermit_coreSeverity *>
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-@property (class, readonly) LSDKKermit_coreSeverity *verbose __attribute__((swift_name("verbose")));
-@property (class, readonly) LSDKKermit_coreSeverity *debug __attribute__((swift_name("debug")));
-@property (class, readonly) LSDKKermit_coreSeverity *info __attribute__((swift_name("info")));
-@property (class, readonly) LSDKKermit_coreSeverity *warn __attribute__((swift_name("warn")));
-@property (class, readonly) LSDKKermit_coreSeverity *error __attribute__((swift_name("error")));
-@property (class, readonly) LSDKKermit_coreSeverity *assert __attribute__((swift_name("assert")));
-+ (LSDKKotlinArray<LSDKKermit_coreSeverity *> *)values __attribute__((swift_name("values()")));
-@property (class, readonly) NSArray<LSDKKermit_coreSeverity *> *entries __attribute__((swift_name("entries")));
 @end
 
 __attribute__((swift_name("KotlinIterator")))
@@ -1616,6 +1417,40 @@ __attribute__((swift_name("Kermit_coreLoggerConfig")))
 @property (readonly) LSDKKermit_coreSeverity *minSeverity __attribute__((swift_name("minSeverity")));
 @end
 
+__attribute__((swift_name("KotlinComparable")))
+@protocol LSDKKotlinComparable
+@required
+- (int32_t)compareToOther:(id _Nullable)other __attribute__((swift_name("compareTo(other:)")));
+@end
+
+__attribute__((swift_name("KotlinEnum")))
+@interface LSDKKotlinEnum<E> : LSDKBase <LSDKKotlinComparable>
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) LSDKKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kermit_coreSeverity")))
+@interface LSDKKermit_coreSeverity : LSDKKotlinEnum<LSDKKermit_coreSeverity *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) LSDKKermit_coreSeverity *verbose __attribute__((swift_name("verbose")));
+@property (class, readonly) LSDKKermit_coreSeverity *debug __attribute__((swift_name("debug")));
+@property (class, readonly) LSDKKermit_coreSeverity *info __attribute__((swift_name("info")));
+@property (class, readonly) LSDKKermit_coreSeverity *warn __attribute__((swift_name("warn")));
+@property (class, readonly) LSDKKermit_coreSeverity *error __attribute__((swift_name("error")));
+@property (class, readonly) LSDKKermit_coreSeverity *assert __attribute__((swift_name("assert")));
++ (LSDKKotlinArray<LSDKKermit_coreSeverity *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<LSDKKermit_coreSeverity *> *entries __attribute__((swift_name("entries")));
+@end
+
 __attribute__((swift_name("Kermit_coreMutableLoggerConfig")))
 @protocol LSDKKermit_coreMutableLoggerConfig <LSDKKermit_coreLoggerConfig>
 @required
@@ -1645,32 +1480,12 @@ __attribute__((swift_name("KermitLogger.Companion")))
 @property (readonly) NSString *tag __attribute__((swift_name("tag")));
 @end
 
-__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
-@protocol LSDKKotlinx_coroutines_coreFlow
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)collectCollector:(id<LSDKKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
-@end
-
 __attribute__((swift_name("KotlinCharIterator")))
 @interface LSDKKotlinCharIterator : LSDKBase <LSDKKotlinIterator>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (id)next __attribute__((swift_name("next()")));
 - (unichar)nextChar __attribute__((swift_name("nextChar()")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinEnumCompanion")))
-@interface LSDKKotlinEnumCompanion : LSDKBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) LSDKKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
 @end
 
 __attribute__((swift_name("KotlinCoroutineContextElement")))
@@ -2098,15 +1913,13 @@ __attribute__((swift_name("Kermit_coreLogWriter")))
 - (void)logSeverity:(LSDKKermit_coreSeverity *)severity message:(NSString *)message tag:(NSString *)tag throwable:(LSDKKotlinThrowable * _Nullable)throwable __attribute__((swift_name("log(severity:message:tag:throwable:)")));
 @end
 
-__attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
-@protocol LSDKKotlinx_coroutines_coreFlowCollector
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinEnumCompanion")))
+@interface LSDKKotlinEnumCompanion : LSDKBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) LSDKKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
 @end
 
 __attribute__((swift_name("Ktor_ioJvmSerializable")))
@@ -2205,13 +2018,13 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  *   kotlinx.coroutines.InternalCoroutinesApi
 */
 - (LSDKKotlinCancellationException *)getCancellationException __attribute__((swift_name("getCancellationException()")));
-- (id<LSDKKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionHandler:(void (^)(LSDKKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(handler:)")));
+- (id<LSDKKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionHandler:(void (^)(LSDKKotlinThrowable * _Nullable cause))handler __attribute__((swift_name("invokeOnCompletion(handler:)")));
 
 /**
  * @note annotations
  *   kotlinx.coroutines.InternalCoroutinesApi
 */
-- (id<LSDKKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(LSDKKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
+- (id<LSDKKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(LSDKKotlinThrowable * _Nullable cause))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -2309,7 +2122,7 @@ __attribute__((swift_name("KotlinContinuation")))
 */
 __attribute__((swift_name("KotlinAbstractCoroutineContextKey")))
 @interface LSDKKotlinAbstractCoroutineContextKey<B, E> : LSDKBase <LSDKKotlinCoroutineContextKey>
-- (instancetype)initWithBaseKey:(id<LSDKKotlinCoroutineContextKey>)baseKey safeCast:(E _Nullable (^)(id<LSDKKotlinCoroutineContextElement>))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithBaseKey:(id<LSDKKotlinCoroutineContextKey>)baseKey safeCast:(E _Nullable (^)(id<LSDKKotlinCoroutineContextElement> element))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer));
 @end
 
 
@@ -2322,7 +2135,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher.Key")))
 @interface LSDKKotlinx_coroutines_coreCoroutineDispatcherKey : LSDKKotlinAbstractCoroutineContextKey<id<LSDKKotlinContinuationInterceptor>, LSDKKotlinx_coroutines_coreCoroutineDispatcher *>
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (instancetype)initWithBaseKey:(id<LSDKKotlinCoroutineContextKey>)baseKey safeCast:(id<LSDKKotlinCoroutineContextElement> _Nullable (^)(id<LSDKKotlinCoroutineContextElement>))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithBaseKey:(id<LSDKKotlinCoroutineContextKey>)baseKey safeCast:(id<LSDKKotlinCoroutineContextElement> _Nullable (^)(id<LSDKKotlinCoroutineContextElement> element))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)key __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKKotlinx_coroutines_coreCoroutineDispatcherKey *shared __attribute__((swift_name("shared")));
 @end
@@ -2502,12 +2315,12 @@ __attribute__((swift_name("Ktor_client_coreHttpRequest")))
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
 @protocol LSDKKotlinx_serialization_coreSerializersModuleCollector
 @required
-- (void)contextualKClass:(id<LSDKKotlinKClass>)kClass provider:(id<LSDKKotlinx_serialization_coreKSerializer> (^)(NSArray<id<LSDKKotlinx_serialization_coreKSerializer>> *))provider __attribute__((swift_name("contextual(kClass:provider:)")));
+- (void)contextualKClass:(id<LSDKKotlinKClass>)kClass provider:(id<LSDKKotlinx_serialization_coreKSerializer> (^)(NSArray<id<LSDKKotlinx_serialization_coreKSerializer>> *typeArgumentsSerializers))provider __attribute__((swift_name("contextual(kClass:provider:)")));
 - (void)contextualKClass:(id<LSDKKotlinKClass>)kClass serializer:(id<LSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
 - (void)polymorphicBaseClass:(id<LSDKKotlinKClass>)baseClass actualClass:(id<LSDKKotlinKClass>)actualClass actualSerializer:(id<LSDKKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
-- (void)polymorphicDefaultBaseClass:(id<LSDKKotlinKClass>)baseClass defaultDeserializerProvider:(id<LSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
-- (void)polymorphicDefaultDeserializerBaseClass:(id<LSDKKotlinKClass>)baseClass defaultDeserializerProvider:(id<LSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
-- (void)polymorphicDefaultSerializerBaseClass:(id<LSDKKotlinKClass>)baseClass defaultSerializerProvider:(id<LSDKKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
+- (void)polymorphicDefaultBaseClass:(id<LSDKKotlinKClass>)baseClass defaultDeserializerProvider:(id<LSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable className))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
+- (void)polymorphicDefaultDeserializerBaseClass:(id<LSDKKotlinKClass>)baseClass defaultDeserializerProvider:(id<LSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable className))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
+- (void)polymorphicDefaultSerializerBaseClass:(id<LSDKKotlinKClass>)baseClass defaultSerializerProvider:(id<LSDKKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id value))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
 @end
 
 __attribute__((swift_name("KotlinKDeclarationContainer")))
@@ -2679,9 +2492,9 @@ __attribute__((swift_name("Kotlinx_coroutines_coreSelectClause")))
 @protocol LSDKKotlinx_coroutines_coreSelectClause
 @required
 @property (readonly) id clauseObject __attribute__((swift_name("clauseObject")));
-@property (readonly) LSDKKotlinUnit *(^(^ _Nullable onCancellationConstructor)(id<LSDKKotlinx_coroutines_coreSelectInstance>, id _Nullable, id _Nullable))(LSDKKotlinThrowable *, id _Nullable, id<LSDKKotlinCoroutineContext>) __attribute__((swift_name("onCancellationConstructor")));
-@property (readonly) id _Nullable (^processResFunc)(id, id _Nullable, id _Nullable) __attribute__((swift_name("processResFunc")));
-@property (readonly) void (^regFunc)(id, id<LSDKKotlinx_coroutines_coreSelectInstance>, id _Nullable) __attribute__((swift_name("regFunc")));
+@property (readonly) LSDKKotlinUnit *(^(^ _Nullable onCancellationConstructor)(id<LSDKKotlinx_coroutines_coreSelectInstance> select, id _Nullable param, id _Nullable internalResult))(LSDKKotlinThrowable *, id _Nullable, id<LSDKKotlinCoroutineContext>) __attribute__((swift_name("onCancellationConstructor")));
+@property (readonly) id _Nullable (^processResFunc)(id clauseObject, id _Nullable param, id _Nullable clauseResult) __attribute__((swift_name("processResFunc")));
+@property (readonly) void (^regFunc)(id clauseObject, id<LSDKKotlinx_coroutines_coreSelectInstance> select, id _Nullable param) __attribute__((swift_name("regFunc")));
 @end
 
 __attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
@@ -3125,23 +2938,8 @@ __attribute__((swift_name("KotlinKTypeProjection.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) LSDKKotlinKTypeProjectionCompanion *shared __attribute__((swift_name("shared")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
 - (LSDKKotlinKTypeProjection *)contravariantType:(id<LSDKKotlinKType>)type __attribute__((swift_name("contravariant(type:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
 - (LSDKKotlinKTypeProjection *)covariantType:(id<LSDKKotlinKType>)type __attribute__((swift_name("covariant(type:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
 - (LSDKKotlinKTypeProjection *)invariantType:(id<LSDKKotlinKType>)type __attribute__((swift_name("invariant(type:)")));
 @property (readonly) LSDKKotlinKTypeProjection *STAR __attribute__((swift_name("STAR")));
 @end
