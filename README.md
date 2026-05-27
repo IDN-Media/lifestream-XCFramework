@@ -14,7 +14,7 @@ Swift Package Manager distribution for Lifestream SDK.
 **Package.swift:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/IDN-Media/lifestream-XCFramework", from: "1.2.0")
+    .package(url: "https://github.com/IDN-Media/lifestream-XCFramework", from: "2.0.0")
 ]
 ```
 
@@ -26,49 +26,66 @@ import LifestreamSDK
 
 // In your App init or AppDelegate
 Lifestream.shared.configure(
-    appId: "your-app-id",
-    secretKey: "your-secret-key",
+    keyId: "your-key-id",
+    keySecret: "your-key-secret",
     organization: "your-organization"
-)
+) { config in
+    config.sandbox = false
+    config.verbose = false
+    config.cache { cache in
+        cache.enabled = true
+        cache.ttl = 30 * 60 // seconds
+        cache.maxSize = 200
+        cache.sessionOnly = false
+    }
+}
 ```
 
 ### Create Link
 ```swift
-// Minimal
-let params = CreateLinkParams(
-    targetUrl: "https://example.com/product/123",
-    deepLink: "myapp://product/123",
-    prefix: nil,
-    name: nil
-)
-
-// With optional prefix and name
-let params = CreateLinkParams(
-    targetUrl: "https://example.com/product/123",
-    deepLink: "myapp://product/123",
-    prefix: "custom",
-    name: "Product Link"
-)
-
+// Simple
 Lifestream.shared.createLink(
-    params: params,
+    targetUrl: "https://example.com/product/123",
+    deepLink: "myapp://product/123",
     onSuccess: { shortUrl in print("Created: \(shortUrl)") },
     onError: { error in print("Error: \(error)") }
 )
+
+// With options
+Lifestream.shared.createLink(
+    targetUrl: "https://example.com/product/123",
+    deepLink: "myapp://product/123",
+    onSuccess: { shortUrl in print("Created: \(shortUrl)") },
+    onError: { error in print("Error: \(error)") }
+) { options in
+    options.name = "Product Link"
+    options.slug = "my-link"
+    options.prefix = "custom"
+    options.expiresAt = "2024-12-31T23:59:59Z"
+}
 ```
 
 ### Resolve Deeplink
 ```swift
 Lifestream.shared.resolveDeeplink(
-    url: url.absoluteString,
+    url: "https://org.idn.link/s/slug",
     onSuccess: { deeplink in handleDeeplink(deeplink) },
     onError: { error in print("Error: \(error)") }
 )
 ```
 
+### Cache
+
+The SDK caches created links and resolved deep links automatically. Identical `createLink` calls return the cached URL without a network request. Resolved deep links are served from cache with background revalidation when stale.
+
+```swift
+// Clear all cached data
+Lifestream.shared.clearCache()
+```
+
 ## Requirements
 
-- iOS 18.2+
+- iOS 16.0+
 - Xcode 16.0+
 - Swift 5.0+
 
